@@ -4,14 +4,29 @@
 
 Geschrieben von: Saulius A
 
-In diesen Kapitel werde ich ihnen verschiedene Gestaltungsprinzipien vorstellen, die bei der Entwicklung von Mobilen Applikationen zu beachten sei. Der Hauptmerk dieser Prinzipien sind die Smartphones, aber es kann auch für Software auf andere Geräte angewendet werden, die in Mobilen Kontexten bedient werden müssen. Als weiteres werde ich noch Designprinzipien bei Wearable Computing vorstellen. 
+In diesen Kapitel werden die verschiedene Gestaltungsprinzipien vorstellen, die bei der Entwicklung von Mobilen Applikationen zu beachten sei. Der Hauptmerk dieser Prinzipien sind die Smartphones, aber es kann auch für Software auf andere Geräte wie Tablets angewendet werden, die in Mobilen Kontexten bedient werden müssen. Als weiteres werden Designprinzipien bei Wearable Computing vorstellen, da sie andere Aingabe- sowie Ausgabegeräten benutzen für die Interaktion, was auch die Gestalung von Benutzeroberflächen wirkung hat.
 
-\subsection{Gestaltungs Regeln für Smartphone Apps} % (fold)
+Bei schon vorhandenen Applikationen muss nicht nur der Design von , sondern auch die funktionalität der Applikationen muss an den Geräten, sowie die Umgebung angepasst werden. Jakob Nielsen erwähnt in seinem Artikel \footnote{http://www.nngroup.com/articles/mobile-site-vs-full-site/, es ist ein Ausschnitt aus Bericht "Mobile Website and Application" http://www.nngroup.com/reports/mobile-website-and-application-usability/} dass die Basis vorgehungsweise wäre:
+
+\begin{itemize}
+	\item Beschneide Features
+	\item Beschneide Inhalt
+	\item Vergrößere elemente der Benutzeroberfläche
+\end{itemize}
+
+Dabei wird im Netzgemeinde viel darüber gestritten, ob er recht hat \footnote{http://www.netmagazine.com/opinions/nielsen-wrong-mobile} mit der Bescheidung der Features oder erstellung von seperaten Webseiten für mobilen sowie stationären Geräten. Es wird daher in diesen Kapitel die Vorgehungsweise von Erstellung von Informationen sowie ihre bearbeitung in mobilen Kontext beschreiben werden.
+
+Ich finde es sind algemein sehr schwer richtige entscheidungen bei der Erstellung von Applikationen getroffen werden. Da es erstens mobile Geräte, wie smartphones nicht nur im mobilen Kontext benutzt werden können, sondern vieleicht auch auf eine Couch zu hause. So hat der benutzer is solchen scenario vieles, was im unseren erwähnten mobilen kontext aufzutretten konnte nicht. So ist vieleicht er komplett komzentrierst, sowie hat einen relativ großen gerät, sodass er auch "normale" seiten benutzen kann, ohne sich dabei erschwert zu werden. Deshalb ist auch nicht unbedingt empfehlenswert, auch solche scenarios für die entwicklung der Applikationen auszuschließen. Es lieber empfehenswert, schlaue systeme oder interface so auszulegen, dass es bei bestimmten verhalten, mehr informationen und Funktionalität anzubieten, vieleicht auch so viel wie der Benutzer von stationären kennt.
+
+So wird in folgenden Kapiteln die Tips für die Gestaltung von der Benutzerschnistellen, Informationsaufbereitung sowie der Funktionalität der Applikationen vorgestellt und diskutiert.
+
+
+\subsection{Gestaltungs Regeln für Smartphone Apps}
 \label{sub:design_f_r_mobile_ger_te}
 
 Seid der Einführung des iPhones, durchdingen die Smarthphones den Markt mit eine unfasbare geschwindigkeit. Der Markt ist groß, und der Wille von den Benutzern ihren neuen Gerät auch unterwegs zu benutzen wird immer Größer. So stellt sich die Frage, welche Prinzipien sollte man beachten bei erstellung von Applikationen für unterwegs. Soll die vorhandenen Programme, die wir von stationären Rechnern kennen, einfach für bedienung mit Kleineren bildschirm angepasst, oder soll viel mehr als nur die Benutzeroberfläche verändert werden? Es gibt viele Antworten, die ich mit der Designregeln vorstellen werde.
 
-\subparagraph{Entferne das Fett} % (fold)
+\subparagraph{Entferne das Fett} 
 \label{subp:entferne_das_fett}
 
 - Funktionalität für mobilen kontext, seite 57 mobileFirst. In buch tapwothy sind 3 mobile behavour: micro-tasking, im local am bored. Google teilt menschen ins urgent now, repetitve now, bored now
@@ -20,36 +35,37 @@ Resultate sofort, und keine Sitemap! 59 mobileFirst
 
 Wie in der Einführung erwähnt wurde, hat der Benutzer im mobilen Kontext eine kurze Zeitspanne, in der er sich auf den mobilen Gerät konzentrieren kann. So kann zu viel Funktionalität den Benutzer mehr stöhren als helfen. So ist es ratsam die wichtigen funktionaliät anzubieten, sowie die Informationsdichte zu schmalen. (cite mobileFrontier)
 
-% subsubsection entferne_das_fett (end)
-
-\subparagraph{Gestalte für mobilen Kontext} % (fold)
+\subparagraph{Gestalte für mobilen Kontext}
 \label{subp:gestalte_f_r_mobilen_kontext}
 
 man muss auch den kontent anpassen, an den bedürfniss, seite 72 mobileFirst
 
-% subparagraph gestalte_f_r_mobilen_kontext (end)
 
-\subparagraph{Schneller Zugriff auf Wichtige informationen} % (fold)
+\subparagraph{Schneller Zugriff auf Wichtige informationen} 
 \label{subp:subparagraph_name}
 
 Benutzer will nicht immer in das innenleben von Programmen eintauchen, nur um kleine wichtige Bruchteil der Information zu gewinnen. Deshalb sollte man wichtige Informationen schon etwa beim einem Streifblick erkenbar sein(mobileFrontier)\cite{Neil:2012uf}. Als Beispiel dient hier der Springboard Muster, wie etwa bei iPhone Homescreen, in bei der Piktogram von Email die Anzahl der neuen Emails sehen kann oder beim Kalender App, wo man die Datum sowie Anzahl der Terminanforderung sehen kann (screenShots). Auch die Facebook App bedient sich an diesen muster (screenShot). Für Informationen, die Leistungen oder Ergebniss darstellen, kann man mithilfe eines Dashboard Musters erste Einstieg für Navigation gewähren. Dieses Muster ist sehr hilfreich für Analytische Applikationen.
 
-\subparagraph{Reduziere Kognitive Aufgaben } % (fold)
+\subparagraph{Reduziere Kognitive Aufgaben } 
 \label{subp:reduziere_kognitive_aufgaben_}
 
 In den Mobilen Kontext ist der Benutzer meistens mit verschiedene Aufgaben beschäftigt, so ist auch die verfügbarkeit der Aufmerksamkeit viel weniger, als etwa in büro. Bei Gestaltung von Applikationen, die in mobilen Kontexten dies muss immer berücksichtigt werden. So soll Anwendungen etstehen, die das unnötige Denken abnimmt. Auch die Benutzeroberfläche muss den Benutzer nicht überfordern. So sind unnötige Animationen ungünstig, da sie etwa den Anwender ablenken. Diese bruchteile von sekunden, für den die Aufmerksamkeit in den moment gelenkt werden, werden unnötig verbraucht, da die zu erledigende Aufgabe selbst nur paar sekunden dauern muss.
 
 
-% subparagraph reduziere_kognitive_aufgaben_ (end)Reduziere kognitive Aufgaben 
-
-\subparagraph{Reduziere Tiefe} % (fold)
+\subparagraph{Reduziere Tiefe} 
 \label{subp:reduziere_das_w_hlen}
 
 
 Text über struktur der Programme. Bezug auf enferne das fett.
 - Kleine herarchie von funktionaliät, keine lange phade
 
-\subparagraph{Ermögliche eine Fortsetzung} % (fold)
+\subparagraph{Nutze alternative Eingabengeräten}
+\label{subp:nutze_alternative_eingabenger_ten}
+
+- Benutzung von Gyroskop, stimme, sowie auch geolokalisierung etc
+
+
+\subparagraph{Ermögliche eine Fortsetzung}
 \label{subp:erm_gliche_eine_fortsetzung}
 
 - In mobilen kontext wird man ständig unterbrochen
@@ -57,49 +73,37 @@ Text über struktur der Programme. Bezug auf enferne das fett.
 
 Read it later beispiele, mobileFirst seite 27
 
-
-% subparagraph reduziere_das_w_hlen (end)
-
-% subparagraph erm_gliche_eine_fortsetzung (end)Ermögliche eine Fortsetzung
-\subparagraph{Benutze Zeit fürs Ordnen} % (fold)
+\subparagraph{Benutze Zeit fürs Ordnen}
 \label{subp:benutze_zeit_als_ordnungsprinzip}
 
-% subparagraph benutze_zeit_als_ordnungsprinzip (end)
 
 \subparagraph{Designe für Unterbrechungen} % (fold)
 \label{subp:designe_f_r_unterbrechungen}
 
-% subparagraph designe_f_r_unterbrechungen (end)Designe für Unterbrechnungen 
+
 \subparagraph{Fokussiere auf Erfahrungen, die nur mobil auftreten können} % (fold)
 \label{subp:fokussiere_auf_erfahrungen_die_nur_mobil_auftreten_k_nnen}
 
-% subparagraph fokussiere_auf_erfahrungen_die_nur_mobil_auftreten_k_nnen (end)
 
-
-\subparagraph{Benutze NUI} % (fold)
+\subparagraph{Benutze NUI} 
 \label{subp:benutze_nui}
 
 - Direktes zeichnen: Yahoo sketch a search, seite 50 mobileFirst
 
-% subparagraph benutze_nui (end)
 
-\subparagraph{Großere Interface elementen} % (fold)
+\subparagraph{Großere Interface elementen} 
 \label{subp:gro_ere_interface_elementen}
 
 - Fat finger
 - iOS, Android, win 8 and Nokia guidelines. sehe mobileFirst 76 und Presi
 
-\subparagraph{Anordnung von Elementen} % (fold)
+\subparagraph{Anordnung von Elementen} 
 \label{subp:anordnung_von_elementen}
 
 70-90\% der menschen sind Rechtshändig, daher auch die Anordung so
 
-% subparagraph anordnung_von_elementen (end)
 
-% subparagraph gro_ere_interface_elementen (end)
-% subparagraph subparagraph_name (end)
-
-\subsection{Gestaltung von Diensten} % (fold)
+\subsection{Gestaltung von Diensten}
 \label{sub:gestaltung_von_diensten}
 
 - Hier ab seite 90 (mobileFrontier) paar stichpunkte nehmen. Ist aber mehr von presi http://www.slideshare.net/preciousforever/patterns-for-multiscreen-strategies abgeleitet. 
@@ -110,22 +114,22 @@ Dienste sollen auch so angepasst werden, dass die im Kernaufgaben auf beliebigen
 
 Man sollte auch dabei aufpassen, dass man mit eine Symbiose von geräten vorhanden sein sollte. Wie etwa dass man mit einen iPhone einen Fernseher steuern kann. Also anhand des Kontextes und Ortes dienste angeboten werden sollten
 
-\subparagraph{Dienstkoherenz und Synchronisation} % (fold)
+\subparagraph{Dienstkoherenz und Synchronisation}
 \label{subp:diensmobilit_t}
 
 Beispiel: Evernote
 
 - Erreichung von diesnten von beliebigen gerät.
 
-% subsection dienstmobilit_t (end)
-\subparagraph{Gerätemobilität} % (fold)
+
+\subparagraph{Gerätemobilität} 
 \label{subp:ger_temobilit_t}
 
 - Gerätemobilität: Benutzung von diensten in Jeden gerät. 
 
-% subparagraph ger_temobilit_t (end)
 
-\subsection{Wearable Computers} % (fold)
+
+\subsection{Wearable Computers} 
 \label{sub:wearable_computers}
 
 - Kurze einführung, bedienung. HUD und Google Glasses
@@ -133,7 +137,3 @@ Beispiel: Evernote
 - Wichtige sachen, wo man aufpassen sollte bei der Entwicklung von GUIs für kleine bildshirme
 
 - Probleme beim Wearable COmputers, etwa attention fragmentation
-
-% subsection wearable_computers (end)
-
-% subsection gestaltung_von_diensten (end)
