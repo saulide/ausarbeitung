@@ -21,30 +21,128 @@ Ich finde es sind algemein sehr schwer richtige entscheidungen bei der Erstellun
 So wird in folgenden Kapiteln die Tips für die Gestaltung von der Benutzerschnistellen, Informationsaufbereitung sowie der Funktionalität der Applikationen vorgestellt und diskutiert.
 
 
-\subsection{Gestaltungs Regeln für Smartphone Apps}
-\label{sub:design_f_r_mobile_ger_te}
+\subsection{Gestaltungs Tips für Bedienelementen und Interaktion}
+\label{sub:Benutzerschnittstellen}
 
-Seid der Einführung des iPhones, durchdingen die Smarthphones den Markt mit eine unfasbare geschwindigkeit. Der Markt ist groß, und der Wille von den Benutzern ihren neuen Gerät auch unterwegs zu benutzen wird immer Größer. So stellt sich die Frage, welche Prinzipien sollte man beachten bei erstellung von Applikationen für unterwegs. Soll die vorhandenen Programme, die wir von stationären Rechnern kennen, einfach für bedienung mit Kleineren bildschirm angepasst, oder soll viel mehr als nur die Benutzeroberfläche verändert werden? Es gibt viele Antworten, die ich mit der Designregeln vorstellen werde.
+Es gibt vielzahl von Mobilen Geräten, sowie deren Benutzerschnittstellen. Der benutzer kann die eingaben entweder über einen Touchscreen, eine Tastatur, keypad, trackpoint etc. eingeben. Dabei wird es in diese Arbeit auf die Smartphones mit einem Touchscreen beschränkt, wird über die interaktion mit den Hand genauer betrachtet
 
-\subparagraph{Entferne das Fett} 
-\label{subp:entferne_das_fett}
+\subparagraph{Großere Oberflächeelementen} 
+\label{subp:gro_ere_interface_elementen}
+
+Um die Fat Finger problem anzugehen, bieten die meinsten Geräte oder Softwarehersteller von Smartphones ihre eigene Rechtslinien. Laut einer Stunde von MIT Touch Lab, sind die durchnitliche Menschliche finger etwa 10-14mm, und die Fingerspitze etwa 8-10 mm\cite{Srinivasan:2003uu}. In der studie von Pekka Parhi et.al\cite{Parhi:2006gh} wurde erforscht welche große von elementen sind optimal für eine ein-handige Daumeninteraktion. Als resultat wurde rausgefunden, dass es keine signifikaten unterschiede bei einer Große ab > 9,5 mm bei getrente aufgaben, sowie > 7.7 bei seriellen aufgaben erledigungen.  
+
+Auch die Hersteller von Betriebsystemen geben ihre Richtlinien für die Größe der Bedienelementen. So rekommendiert Apple eine größe von 44x44 Punkten zu erstellen\cite{Apple}. Microsft ist in diesen Punkt ein wenig genauer, und beschreibt nicht nur die mindestgroße von 7mm/26px des Bedienelements, sondern auch auf den mindestabstand von 2mm/8px zwischen Elementen\cite{lukeGUI}. Die mindestabstände soll den Benutzer helfen einen unbeabsichtigten anklicken eines benachbartes Elementes zu vermeiden. 
+
+HIER EIN BILD AUS APPLE UND mobileFrontier 75
+
+\subparagraph{Anordnung von Elementen} 
+\label{subp:anordnung_von_elementen}
+
+Die Richtige auslegung den elementen, kann den benutzer helfen schnell aun die wichtigen funktionen zuzugreifen, ohne mehr kraftaufwand oder wechsel der haltung des geräts. In der literatur wid oft erwähnt die generation thumb, also gruppe von menschen die gewöhnt sind mit den daumenfinger mit der Software zu interagieren. Es wird daher empfohlen oft Benutzen elementen nahe des bereichs belegen, den man leicht mit den Daumenfinger erreichen kann. Da 70-90\% der Menschen  Rechtshändig sind, wird von vielen Designer empfohlen auch die Elemente so auszulegen siehe Figure~\ref{fig:rechtsPositioning}. Wenn man eine Schnittmenge von leichterreichbaren Elementenplatzierung erriecht, sowie Flächen für Greifen berehcner, kommt man auf ungefähre Platzierungskarte wie in Figure~\ref{fig:forallPositioning}. 
+
+Man muss aber dazu bemerken, dass inn diesen Beispiel Normale Hände proportionen sowie eine start telefongroße angenommen wurde.
+
+\begin{figure}[h]
+	\caption{Für Rechtshänder}
+	\includegraphics[width=0.5\textwidth]{img/anordungDerElementeSimple.png}
+	\label{fig:rechtsPositioning}
+\end{figure}
+
+\begin{figure}[h]
+	\caption{Für beide Benutzergruppen}
+	\includegraphics[width=0.5\textwidth]{img/anordungDerElementeForAll.png}
+	\label{fig:forallPositioning}
+\end{figure}
+
+\subparagraph{Benutze NUI} 
+\label{subp:benutze_nui}
+
+Die meisten Touchgeräten bieten einen direkte eingabe, mit denen Naturelle Gesten möglich sind. So ist es empfehlenswert Gesten auch für interaktion mit der Applikation anzubieten. Ein schönes Beispiel beitete Yahoo sketch a search, die leider nicht mehr Angeboten wird \footnote{http://techcrunch.com/2012/01/30/yahoo-shuts-down-10-mobile-apps-says-its-going-mobile-first/ }, wie in FIGURE. So konnte man den Bereich, in den man eine lokale suche machen wollte mit einen Oval zu beschränken.
+
+Dabei muss man immer bedenken, dass in mobilen Kontext kann der benutzer nicht immer mit zwei Händen den Gerät bedienen. Somit können gesten wie Pinch, Spread oder Rotate nicht immer benutzt werden, und man sollte auf alternative Möglichkeiten zur ausführung solcher Interaktionen nachdenken. Wie in Beispiel in Figure~\ref{fig:nuibsp} Zeigt eine Oberfläche\footnote{Ausschnitt aus OpenSteetMap.com} kann man als Alternative von Pinch oder Spread Gesten, einen Schaltknopf anbieten, der eine Gleiche manipulation änlich wie mit den Gesten.
+
+\begin{figure}[h]
+	\caption{Alternative Interaktionsmöglichkeiten}
+	\includegraphics[width=0.5\textwidth]{img/NUIbsp.png}
+	\label{fig:nuibsp}
+\end{figure}
+
+\subparagraph{Designe für Außeneinsatz} % (fold)
+\label{subp:designe_f_r_au_eneinsatz}
+
+Design Paterns 455
+
+\subparagraph{Gebe information in verschiedenen Ausgaben}
+\label{subp:gebe_information_in_verschiedenen_ausgaben}
+
+Notifications - LED, Alarm, etc
+
+\subsection{Informationsaufbereitung}
 
 - Funktionalität für mobilen kontext, seite 57 mobileFirst. In buch tapwothy sind 3 mobile behavour: micro-tasking, im local am bored. Google teilt menschen ins urgent now, repetitve now, bored now
 
-Resultate sofort, und keine Sitemap! 59 mobileFirst
+Menschen in mobilen kontexten haben viele Wünsche und bedürfnisse die von paradigmen, die in einen stationären arbeitsplatz nicht auftauchen. Um gut benutzbare Software für solchen Szenarien zu entwicklen, ist es wichtig die Aktionen sowie Verlangen von benutzer zu wissen und zu berücksichtigen. 
 
-Wie in der Einführung erwähnt wurde, hat der Benutzer im mobilen Kontext eine kurze Zeitspanne, in der er sich auf den mobilen Gerät konzentrieren kann. So kann zu viel Funktionalität den Benutzer mehr stöhren als helfen. So ist es ratsam die wichtigen funktionaliät anzubieten, sowie die Informationsdichte zu schmalen. (cite mobileFrontier)
+Die Einteilung von Benutzer in mobilen Kontexten kann laut Google in 3 bereiche unterteilt werden: "urgent now", "repetitive now", "bored now"\cite{googleUsers}. Mit "Urgent now" ist gemeint, wenn der Benutzer Informationen ganz schnell erfahren will. Solche Informationen können sein, wie etwa die Adresse des Artzes oder Buchladens. Da diese Informationen sind Ortsabhänglig, versucht goolge die abfrage zu verbessern indem man die Benutzerort beim Abfrage hinzufügt. Bei Repretitve now ist gemeint wenn der benutzer die Gleiche art der Informationen immer wieder aufruft, wie etwa Wettervorhersage oder Aktienkursen. Bei bored now ist benutzer in zustand, wo er viel Zeit hat, etwa in emfangshalle von Flughafen, im Öffentlichen verkehrsmittel  oder Kaffe. Das Verhalten der Benutzer is dann wie von Benutzer der Stationären Rechner, aber mobile Benutzer haben nicht solche gleichen eingabe und ausgabegeräten.
+
+Eine einteilung anhand von Interaktionstypen ist viel Detalierter und hilfreicher für den Design von Informationsaufbereitung. So können die mobile Interaktionen in vier Kategorien eingeteilt (anhand \cite[Seite 50]{mobileFirst}):
+
+\begin{itemize}
+ 	\item[Suche] Ich brauche eine Antwort, sofort
+ 	\item[Erforschen/Spielen] Ich habe Zeit, und will eine kurze Ablenkung
+ 	\item[Einchecken/Status] Irgendwas ändert sich, und will ich wissen oder Teilen
+ 	\item[Editieren/Kreieren] Ich muss was schnell erledigen
+ \end{itemize} 
+
+Anhand diese Interaktionsparadigmen, kann man paar regeln oder hinweise für erstellung oder modifizierung von applikationen erfassen.
+
+\subparagraph{Mach es schlank} 
+\label{subp:entferne_das_fett}
+
+Wie schon in der Einleitung von diesen Kapitel erwähnt wurde, emfehlt Jakob Nielsen die Informationsangebote auf mobilen Webseiten zu schmallern. Auch die Funktionsangebot soll zu den Mobilen Kontext passen. Als Beispiel kann hier die Amazon webseite sein (siehe Figure~\ref{fig:amazon}. So wird auf der mobile Webseite bei der Auswahl von einen Produkt, der Bild, preis und sofortige Kaufen oder Merken angeboten. In vergleich zu eine normale Webseite ist hier die Information nicht auf einmal angeboten, sondern ist viel kleiner(siehe Figure~\ref{fig:amazonFull}). Detalierte Informationen, die aber auch nur teil von normalen Webseiten beinhalten, können bei Bedarf ausgewählt werden. 
+
+\begin{figure}[h]
+	\caption{Amazon mobile Webseite}
+	\includegraphics[width=0.5\textwidth]{img/amazon.png}
+	\label{fig:amazon}
+\end{figure}
+
+\begin{figure}[h]
+	\caption{Amazon normale Webseite}
+	\includegraphics[width=0.5\textwidth]{img/amazonFull.png}
+	\label{fig:amazonFull}
+\end{figure}
+Auch mehr der Inhalt und nicht die navigation sollte in mobilen Kontext bevorzugt werden\cite[Seite 52]{mobileFirst}. So hat der Besucher der Kategorie "Erforschen/Spielen" vieleicht ein wenig Zeit um Inhalt zu konsumieren, und er sollte nicht mit eine Sitemap überfordert werden, oder überlegen wo er jetzt hin soll. So bietet etwa Youtube einen direkten Einstieg für Konsum, in den es schon Videos für den benutzer vorschlägt (siehe Figure~\ref{fig:youtube})
+
+\begin{figure}[h]
+	\caption{Youtube}
+	\includegraphics[width=0.5\textwidth]{img/youtube.png}
+	\label{fig:youtube}
+\end{figure}
+
+
+% Eine reduzierung der Informationsdichte kann behilflich sein, schnell auf Wichtige information zuzugreifen und somit auch die Zeit für erledigung der gewüschte aufgabe zu kürzen. So sollten nicht alle Möglichkeiten angeboten werden, sondern für die schnellen Zugriff und Erledigung ausgelegt werden. So sollte man auch die Funktionalitäten, die in Mobilen Kontext schwer zu verbeiten sind, nicht angeboten werden. Als beispiel, wäre etwa eine webseite von Amazon. 
+
+% Wie in der Einführung erwähnt wurde, hat der Benutzer im mobilen Kontext eine kurze Zeitspanne, in der er sich auf den mobilen Gerät konzentrieren kann. So kann zu viel Funktionalität den Benutzer mehr stöhren als helfen. So ist es ratsam die wichtigen funktionaliät anzubieten, sowie die Informationsdichte zu schmalen. (cite mobileFrontier)
+
+\subparagraph{Schneller Zugriff auf Wichtige informationen} 
+\label{subp:subparagraph_name}
+
+Wie im szenario "Suche", will der Benutzer nicht immer in das innenleben von Programmen eintauchen, nur um kleine wichtige Bruchteil der Information zu gewinnen. Deshalb sollte man wichtige Informationen schon etwa beim einem Streifblick erkenbar sein\cite[Seite 54]{mobileFrontier}\cite{Neil:2012uf},  wie etwa bei iPhone Homescreen. So kann man die Piktograme so gestalten, dass sie Information selbst beinhalten, wie etwa die Piktorgram von iOS Kalender, siehe Beispiel Figure~\ref{fig:iconIos}. Auch eine Kleine Piktogram auf Piktogram kann benutzer Hinweise auf neuen Inhalt anbieten.
+
+\begin{figure}[h]
+	\caption{Schneller Zugriff auf Informationen}
+	\includegraphics[width=0.5\textwidth]{img/iconIos.png}
+	\label{fig:iconIos}
+\end{figure}
+
+% Als Beispiel dient hier der Springboard Muster\cite[Seite 3]{designPatterns},.Auch die Facebook App bedient sich an diesen muster (screenShot). Für Informationen, die Leistungen oder Ergebniss darstellen, kann man mithilfe eines Dashboard Musters erste Einstieg für Navigation gewähren. Dieses Muster ist sehr hilfreich für Analytische Applikationen.
 
 \subparagraph{Gestalte für mobilen Kontext}
 \label{subp:gestalte_f_r_mobilen_kontext}
 
 man muss auch den kontent anpassen, an den bedürfniss, seite 72 mobileFirst
 
-
-\subparagraph{Schneller Zugriff auf Wichtige informationen} 
-\label{subp:subparagraph_name}
-
-Benutzer will nicht immer in das innenleben von Programmen eintauchen, nur um kleine wichtige Bruchteil der Information zu gewinnen. Deshalb sollte man wichtige Informationen schon etwa beim einem Streifblick erkenbar sein(mobileFrontier)\cite{Neil:2012uf}. Als Beispiel dient hier der Springboard Muster, wie etwa bei iPhone Homescreen, in bei der Piktogram von Email die Anzahl der neuen Emails sehen kann oder beim Kalender App, wo man die Datum sowie Anzahl der Terminanforderung sehen kann (screenShots). Auch die Facebook App bedient sich an diesen muster (screenShot). Für Informationen, die Leistungen oder Ergebniss darstellen, kann man mithilfe eines Dashboard Musters erste Einstieg für Navigation gewähren. Dieses Muster ist sehr hilfreich für Analytische Applikationen.
 
 \subparagraph{Reduziere Kognitive Aufgaben } 
 \label{subp:reduziere_kognitive_aufgaben_}
@@ -83,24 +181,6 @@ Read it later beispiele, mobileFirst seite 27
 
 \subparagraph{Fokussiere auf Erfahrungen, die nur mobil auftreten können} % (fold)
 \label{subp:fokussiere_auf_erfahrungen_die_nur_mobil_auftreten_k_nnen}
-
-
-\subparagraph{Benutze NUI} 
-\label{subp:benutze_nui}
-
-- Direktes zeichnen: Yahoo sketch a search, seite 50 mobileFirst
-
-
-\subparagraph{Großere Interface elementen} 
-\label{subp:gro_ere_interface_elementen}
-
-- Fat finger
-- iOS, Android, win 8 and Nokia guidelines. sehe mobileFirst 76 und Presi
-
-\subparagraph{Anordnung von Elementen} 
-\label{subp:anordnung_von_elementen}
-
-70-90\% der menschen sind Rechtshändig, daher auch die Anordung so
 
 
 \subsection{Gestaltung von Diensten}

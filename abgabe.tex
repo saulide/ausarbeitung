@@ -10,7 +10,7 @@
 \usepackage[utf8]{inputenc}
 % Setup for fullpage use
 \usepackage{fullpage}
-
+\usepackage{nameref}
 % Uncomment some of the following if you use the features
 %
 % Running Headers and footers
@@ -49,6 +49,16 @@
 \else
 \usepackage{graphicx}
 \fi
+
+% References as label hack
+\makeatletter
+\def\namedlabel#1#2{\begingroup
+	#2%
+	\def\@currentlabel{#2}%
+	\phantomsection\label{#1}\endgroup
+}
+
+\makeatother
 \title{Design for all: Mobiles Kontext}
 \author{  }
 
