@@ -36,6 +36,9 @@
 % This is now the recommended way for checking for PDFLaTeX:
 \usepackage{ifpdf}
 
+\usepackage{float}
+\usepackage{wrapfig}
+
 %\newif\ifpdf
 %\ifx\pdfoutput\undefined
 %\pdffalse % we are not running PDFLaTeX
@@ -50,6 +53,8 @@
 \usepackage{graphicx}
 \fi
 
+\usepackage{caption}
+\usepackage{subcaption}
 % References as label hack
 \makeatletter
 \def\namedlabel#1#2{\begingroup
@@ -84,5 +89,5 @@
 \input{text/beispiel.tex}
 
 \bibliographystyle{plain}
-\bibliography{sauliusBib, thorbenBib, dimaBib}
+\bibliography{sauliusPapBib,sauliusBib, thorbenBib, dimaBib}
 \end{document}

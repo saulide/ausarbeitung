@@ -42,17 +42,24 @@ Die Richtige auslegung den elementen, kann den benutzer helfen schnell aun die w
 
 Man muss aber dazu bemerken, dass inn diesen Beispiel Normale Hände proportionen sowie eine start telefongroße angenommen wurde.
 
-\begin{figure}[h]
-	\caption{Für Rechtshänder}
-	\includegraphics[width=0.5\textwidth]{img/anordungDerElementeSimple.png}
-	\label{fig:rechtsPositioning}
+
+\begin{figure}
+	\centering
+	\begin{subfigure}[b]{0.3\textwidth}
+		\centering
+			\includegraphics[width=1\textwidth]{img/anordungDerElementeSimple.png}
+			\caption{Für Rechtshänder}\label{fig:rechtsPositioning}
+			
+	\end{subfigure}
+	\begin{subfigure}[b]{0.3\textwidth}
+		\centering
+			\includegraphics[width=1\textwidth]{img/anordungDerElementeForAll.png}
+			\caption{Für beide Benutzergruppen}\label{fig:forallPositioning}
+			
+	\end{subfigure}
+	\caption{Positionierung von Elementen}\label{fig:elementPos}
 \end{figure}
 
-\begin{figure}[h]
-	\caption{Für beide Benutzergruppen}
-	\includegraphics[width=0.5\textwidth]{img/anordungDerElementeForAll.png}
-	\label{fig:forallPositioning}
-\end{figure}
 
 \subparagraph{Benutze NUI} 
 \label{subp:benutze_nui}
@@ -61,11 +68,13 @@ Die meisten Touchgeräten bieten einen direkte eingabe, mit denen Naturelle Gest
 
 Dabei muss man immer bedenken, dass in mobilen Kontext kann der benutzer nicht immer mit zwei Händen den Gerät bedienen. Somit können gesten wie Pinch, Spread oder Rotate nicht immer benutzt werden, und man sollte auf alternative Möglichkeiten zur ausführung solcher Interaktionen nachdenken. Wie in Beispiel in Figure~\ref{fig:nuibsp} Zeigt eine Oberfläche\footnote{Ausschnitt aus OpenSteetMap.com} kann man als Alternative von Pinch oder Spread Gesten, einen Schaltknopf anbieten, der eine Gleiche manipulation änlich wie mit den Gesten.
 
-\begin{figure}[h]
-	\caption{Alternative Interaktionsmöglichkeiten}
-	\includegraphics[width=0.5\textwidth]{img/NUIbsp.png}
-	\label{fig:nuibsp}
-\end{figure}
+\begin{wrapfigure}{r}{0.5\textwidth}
+	\begin{center}
+	
+	\includegraphics[width=0.3\textwidth]{img/NUIbsp.png}
+	\caption{Alternative Interaktionsmöglichkeiten}\label{fig:nuibsp}
+\end{center}
+\end{wrapfigure}
 
 \subparagraph{Designe für Außeneinsatz} % (fold)
 \label{subp:designe_f_r_au_eneinsatz}
@@ -101,24 +110,29 @@ Anhand diese Interaktionsparadigmen, kann man paar regeln oder hinweise für ers
 
 Wie schon in der Einleitung von diesen Kapitel erwähnt wurde, emfehlt Jakob Nielsen die Informationsangebote auf mobilen Webseiten zu schmallern. Auch die Funktionsangebot soll zu den Mobilen Kontext passen. Als Beispiel kann hier die Amazon webseite sein (siehe Figure~\ref{fig:amazon}. So wird auf der mobile Webseite bei der Auswahl von einen Produkt, der Bild, preis und sofortige Kaufen oder Merken angeboten. In vergleich zu eine normale Webseite ist hier die Information nicht auf einmal angeboten, sondern ist viel kleiner(siehe Figure~\ref{fig:amazonFull}). Detalierte Informationen, die aber auch nur teil von normalen Webseiten beinhalten, können bei Bedarf ausgewählt werden. 
 
-\begin{figure}[h]
-	\caption{Amazon mobile Webseite}
-	\includegraphics[width=0.5\textwidth]{img/amazon.png}
-	\label{fig:amazon}
+\begin{figure}
+	\centering
+	\begin{subfigure}[b]{0.3\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{img/amazon.png}
+		\caption{Mobile Webseite}\label{fig:amazon}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.6\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{img/amazonFull.png}
+		\caption{Normale Webseite}\label{fig:amazonFull}
+	\end{subfigure}
+	\caption{Webseiten von Amazon}\label{fig:amazonSites}
 \end{figure}
 
-\begin{figure}[h]
-	\caption{Amazon normale Webseite}
-	\includegraphics[width=0.5\textwidth]{img/amazonFull.png}
-	\label{fig:amazonFull}
-\end{figure}
 Auch mehr der Inhalt und nicht die navigation sollte in mobilen Kontext bevorzugt werden\cite[Seite 52]{mobileFirst}. So hat der Besucher der Kategorie "Erforschen/Spielen" vieleicht ein wenig Zeit um Inhalt zu konsumieren, und er sollte nicht mit eine Sitemap überfordert werden, oder überlegen wo er jetzt hin soll. So bietet etwa Youtube einen direkten Einstieg für Konsum, in den es schon Videos für den benutzer vorschlägt (siehe Figure~\ref{fig:youtube})
 
-\begin{figure}[h]
-	\caption{Youtube}
-	\includegraphics[width=0.5\textwidth]{img/youtube.png}
-	\label{fig:youtube}
-\end{figure}
+\begin{wrapfigure}{r}{0.5\textwidth}
+	\begin{center}
+	\includegraphics[width=0.3\textwidth]{img/youtube.png}
+	\caption{Youtube}\label{fig:youtube}
+\end{center}
+\end{wrapfigure}
 
 
 % Eine reduzierung der Informationsdichte kann behilflich sein, schnell auf Wichtige information zuzugreifen und somit auch die Zeit für erledigung der gewüschte aufgabe zu kürzen. So sollten nicht alle Möglichkeiten angeboten werden, sondern für die schnellen Zugriff und Erledigung ausgelegt werden. So sollte man auch die Funktionalitäten, die in Mobilen Kontext schwer zu verbeiten sind, nicht angeboten werden. Als beispiel, wäre etwa eine webseite von Amazon. 
@@ -128,43 +142,42 @@ Auch mehr der Inhalt und nicht die navigation sollte in mobilen Kontext bevorzug
 \subparagraph{Schneller Zugriff auf Wichtige informationen} 
 \label{subp:subparagraph_name}
 
-Wie im szenario "Suche", will der Benutzer nicht immer in das innenleben von Programmen eintauchen, nur um kleine wichtige Bruchteil der Information zu gewinnen. Deshalb sollte man wichtige Informationen schon etwa beim einem Streifblick erkenbar sein\cite[Seite 54]{mobileFrontier}\cite{Neil:2012uf},  wie etwa bei iPhone Homescreen. So kann man die Piktograme so gestalten, dass sie Information selbst beinhalten, wie etwa die Piktorgram von iOS Kalender, siehe Beispiel Figure~\ref{fig:iconIos}. Auch eine Kleine Piktogram auf Piktogram kann benutzer Hinweise auf neuen Inhalt anbieten.
+Wie im szenario "Suche", will der Benutzer nicht immer in das innenleben von Programmen eintauchen, nur um kleine wichtige Bruchteil der Information zu gewinnen. Deshalb sollte man wichtige Informationen schon etwa beim einem Streifblick erkenbar sein(vgl. \cite[Seite 54]{mobileFrontier} und \cite{Neil:2012uf}),  wie etwa bei iPhone Homescreen. So kann man die Piktograme so gestalten, dass sie Information selbst beinhalten, wie etwa die Piktorgram von iOS Kalender, siehe Beispiel Figure~\ref{fig:iconIos}. Auch eine Kleine Piktogram auf Piktogram kann benutzer Hinweise auf neuen Inhalt anbieten.
 
-\begin{figure}[h]
-	\caption{Schneller Zugriff auf Informationen}
-	\includegraphics[width=0.5\textwidth]{img/iconIos.png}
-	\label{fig:iconIos}
-\end{figure}
+\begin{wrapfigure}{r}{0.5\textwidth}
+	\begin{center}
+	
+	\includegraphics[width=0.3\textwidth]{img/iconIos.png}
+	\caption{Schneller Zugriff auf Informationen}\label{fig:iconIos}
+\end{center}
+\end{wrapfigure}
 
 % Als Beispiel dient hier der Springboard Muster\cite[Seite 3]{designPatterns},.Auch die Facebook App bedient sich an diesen muster (screenShot). Für Informationen, die Leistungen oder Ergebniss darstellen, kann man mithilfe eines Dashboard Musters erste Einstieg für Navigation gewähren. Dieses Muster ist sehr hilfreich für Analytische Applikationen.
-
-\subparagraph{Gestalte für mobilen Kontext}
-\label{subp:gestalte_f_r_mobilen_kontext}
-
-man muss auch den kontent anpassen, an den bedürfniss, seite 72 mobileFirst
-
 
 \subparagraph{Reduziere Kognitive Aufgaben } 
 \label{subp:reduziere_kognitive_aufgaben_}
 
-In den Mobilen Kontext ist der Benutzer meistens mit verschiedene Aufgaben beschäftigt, so ist auch die verfügbarkeit der Aufmerksamkeit viel weniger, als etwa in büro. Bei Gestaltung von Applikationen, die in mobilen Kontexten dies muss immer berücksichtigt werden. So soll Anwendungen etstehen, die das unnötige Denken abnimmt. Auch die Benutzeroberfläche muss den Benutzer nicht überfordern. So sind unnötige Animationen ungünstig, da sie etwa den Anwender ablenken. Diese bruchteile von sekunden, für den die Aufmerksamkeit in den moment gelenkt werden, werden unnötig verbraucht, da die zu erledigende Aufgabe selbst nur paar sekunden dauern muss.
+In den Mobilen Kontext ist der Benutzer meistens mit verschiedene Aufgaben beschäftigt, so ist auch die verfügbarkeit der Aufmerksamkeit viel weniger, als etwa in büro. Bei Gestaltung von Applikationen, die in mobilen Kontexten dies muss immer berücksichtigt werden. So soll Anwendungen etstehen, die das unnötige Denken abnimmt. Auch die Benutzeroberfläche muss den Benutzer nicht überfordern. So sind unnötige Animationen in eine Anwendung sind ungünstig, da sie den Anwender unnötig ablenken können. Diese Bruchteile von Sekunden, die für solche Animationen in den moment gelenkt werden, werden unnötig verbraucht, da die zu erledigende Aufgabe selbst nur paar Sekunden dauern muss. Außerdem Aufgaben, die den benutzer zu viel Aufmerksamkeit verbrauchen, können auch den Benutzer gefährden, etwa wenn er viel zu abgelenkt wird bei gehen (vgl. \cite{Nasar:2008cc})
+
 
 
 \subparagraph{Reduziere Tiefe} 
 \label{subp:reduziere_das_w_hlen}
 
+Die Herarchische Navigation ist ein viel benutzes Navigationsmuster in Applikations. So sind auch in mobilen Kontexten solche navigation übernommen. Dabei, wie auch bei den Emfehlungen in "Mach es schlank", muss man auch die Hierarchietiefe nichts zu groß halten. Mit jede weitere Tiefe muss der benutzer sich mehr Errinern und Abrufen und auch. Es wurde beobachtet bei nicht mobilen Kontexten, dass solche Navigationen eine Fehleranfähligkeit von 4\% auf 34.0\% bekommt, wenn die Navigationsstruktur von 1 bis 6 erhöht wird (Snowberry at al. Zitiert von \cite{Chae:2004gp}). Man muss auch nicht vergessen, dass der Benutzer nicht nur leichter Abgelenk wird (vgl. \cite{Oulasvirta:2005vn}), was auch eine beeinflussung auf der erfolgreiche Navigation hat.
 
-Text über struktur der Programme. Bezug auf enferne das fett.
-- Kleine herarchie von funktionaliät, keine lange phade
-
-\subparagraph{Nutze alternative Eingabengeräten}
+\subparagraph{Nutze alternative Ein- und Ausgabequellen}
 \label{subp:nutze_alternative_eingabenger_ten}
 
-- Benutzung von Gyroskop, stimme, sowie auch geolokalisierung etc
+Die Interaktion mit den Mobilen Gerät kann in einem Mobilen Kontext durch vieles beeinflußt werden. So kann der Benutzer etwa beim Fahren einen Autos nicht mit der Hand bedient werden, oder der Blick kann nicht immer auf den Bildschirm ausgerichtet werden. So sollen auch andere Ein- oder Ausgabequellen benutzt werden. Hier bietet sich die Sprache als Ein- und Ausgabemedium.
+Auch die Geolokalisierung kann sehr behilflich sein, um etwa Benutzer Informationen anzubieten bei erreichen eines Bestimmten Ortes, ohne Bewusste Eingabe des Ortes durch den Benutzer . Geolokalisierung kann auch Benutzer helfen, weniger Informationen für eine Suche anzugeben, wenn etwa er nach eine Kaffe sucht. So können schon in voraus Kaffes in Unmittelbare nähe gesucht werden.Die Benutzung von Status-Led oder Vibration kann Benutzer auf erreignisse Hinweisen, ohne dass er Immer auf den Bildschirm es sehen muss. So kann man in Android Notifications benutzen, um etwa die Status-LED mit bestimmte Farbe und Interwallen blinken zu lassen (vgl. \cite{androidNotApi}).
 
+Es gibt aber auch eine Nachteile für Alternative Ausgaben. Es kann passieren, dass zuviele und unnötige Benachrichtigugen den Benutzer mehr Hindern als Helfen bei der Erfühlung der täglichen Aufgaben. Eine vorsichte und grundlich Nachgedachte Benutzung von alternativen Ein- und Ausgabequellen ist hier sehr geboten.
 
 \subparagraph{Ermögliche eine Fortsetzung}
 \label{subp:erm_gliche_eine_fortsetzung}
+
+Im mobilen Kontexten wird der Benutzer oft unterbrochen in seine Aufgaben oder er hat nicht viel Zeit seine Aufgaben zu beenden. So sollen auch die Anwendungen möglichkeiten bieten die Aufgaben später zu Erledigen. Als Beispiel dient etwa der dienst Pocket. So kann man 
 
 - In mobilen kontext wird man ständig unterbrochen
 - Ausfühlen von Formularen, 
@@ -181,6 +194,13 @@ Read it later beispiele, mobileFirst seite 27
 
 \subparagraph{Fokussiere auf Erfahrungen, die nur mobil auftreten können} % (fold)
 \label{subp:fokussiere_auf_erfahrungen_die_nur_mobil_auftreten_k_nnen}
+
+\subparagraph{Gestalte für mobilen Kontext}
+\label{subp:gestalte_f_r_mobilen_kontext}
+
+
+
+man muss auch den kontent anpassen, an den bedürfniss, seite 72 mobileFirst
 
 
 \subsection{Gestaltung von Diensten}
