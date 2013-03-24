@@ -60,6 +60,8 @@
 
 \usepackage[bf]{caption}
 \usepackage{subcaption}
+\usepackage{biblatex}
+\bibliography{sauliusPapBib,sauliusBib,thorbenBib,dimaBib}
 % References as label hack
 \makeatletter
 \def\namedlabel#1#2{\begingroup
@@ -93,6 +95,6 @@
 \input{text/designTips.tex}
 \input{text/beispiel.tex}
 
-\bibliographystyle{plain}
-\bibliography{sauliusPapBib,sauliusBib,thorbenBib,dimaBib}
+
+\printbibliography
 \end{document}
