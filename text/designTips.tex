@@ -1,30 +1,49 @@
 %!TEX root = ../abgabe.tex
 
-\section{Gestaltungsregeln und Hinweise}
+\section{Gestaltung von Applikationen für mobilen Kontext}
 
-Geschrieben von: Saulius A
+Geschrieben von: Saulius Archipovas
 
-Mit der stetigen Verbreitung von Smartphones und mobilen Geräten im alltäglichen Leben, steigt auch die Benutzung von Applikationen in mobilen Kontexten. Dabei stoßen viele der Benutzer, die mittels ihrem mobilen Gerät auf vorhandene Dienste zugreifen wollen, vielmals auf Usability Probleme. Solche Probleme liegen nicht nur in der Inhaltsstruktur oder der visuelle Kommunikation begründet, sondern auch in Funktionenen, die Dienste anbieten. Dies liegt zumeist daran, dass diese Dienste für die Erledigung von Aufgaben an einem stationären Rechner konzipiert wurden. So werden speziellen Gegebenheiten von mobilen Geräten, die sowohl Einschränkungen als auch Vorteile, für den Benutzer bedeuten, bei der Entwicklung oftmals nicht beachtet.
+Mit der stetigen Verbreitung von Smartphones und mobilen Geräten im alltäglichen Leben, steigt auch die Benutzung von Applikationen in mobilen Kontexten. Dabei stoßen viele der Benutzer, die mittels ihrem mobilen Gerät auf vorhandene Dienste zugreifen wollen, vielmals auf Usability Probleme. Solche Probleme liegen nicht nur in der Inhaltsstruktur oder der visuelle Kommunikation begründet, sondern auch in Funktionenen, die die Dienste anbieten. Dies liegt zumeist daran, dass diese Dienste für die Erledigung von Aufgaben an einem stationären Rechner konzipiert wurden. So werden speziellen Gegebenheiten von mobilen Geräten, die sowohl Einschränkungen als auch Vorteile, für den Benutzer bedeuten, bei der Entwicklung oftmals nicht beachtet.
 Bei schon vorhandenen Applikationen muss daher meistens nicht nur das Design, sondern auch die Funktionalität der Applikationen sowie die Benutzungsumgebung an die Benutzerintentionen angepasst werden. 
-In diesem Abschnitt werden verschiedene Gestaltungsprinzipien vorgestellt, die bei der Gestaltung und Entwicklung von Applikationen und Webseiten  für einen mobilen Kontext zu beachten sind. Viele der vorgestellten Prinzipien sind nützlich für eine breite Palette von Geräten, die im mobilen Kontext benutzt werden können. Es wird sich in dieser Ausarbeitung aber vorwiegend auf die Gestaltung von Applikationen für Smartphones in bezogen. In Abschnitt 1.1. werden die Prinzipien für den Aufbau wesentlicher Bedienelemente und die Interaktionsmöglichkeiten mit ihnen vorgestellt .\ref{sub:Benutzerschnittstellen}. Hiernach werden alternative Möglichkeiten der Informationsarchitektur ref{sec:Informationsaufbereitung} aufgezeigt, die bei der Erstellung von Applikationen für mobile Kontexte erwogen werden sollten. Da auch die Dienste bestimmte Anforderungen erfüllen sollten, werden diese im Abschnitt xxx \ref{sub:gestaltung_von_diensten} erläutert.Am Ende dieses Kapitels, werden Gestaltungshinweise für die Entwicklung von Applikationen im Wearable Computing Kontext, die spezielle Anforderungen erfüllen müssen, vorgestellt.
-In allen Abschnitten werden keine generellen Gestaltungsprinzipien wie z.B.  Gesetze der Nähe vorgestellt. Sondern es wird sich im Wesentlichen auf solche konzentriert, die für den mobilen Kontext als wichtig erscheinen.
+
+
+In diesem Abschnitt werden verschiedene Gestaltungsprinzipien vorgestellt, die bei der Gestaltung und Entwicklung von Applikationen und Webseiten  für einen mobilen Kontext zu beachten sind. Viele der vorgestellten Prinzipien sind nützlich für eine breite Palette von Geräten, die im mobilen Kontext benutzt werden können. Es wird sich in dieser Ausarbeitung aber vorwiegend auf die Gestaltung von Applikationen für Smartphones in bezogen. In Abschnitt \ref{sub:Benutzerschnittstellen} werden die Prinzipien für den Aufbau wesentlicher Bedienelemente und die Interaktionsmöglichkeiten mit ihnen vorgestellt. Hiernach in Abschnitt \ref{sec:Informationsaufbereitung} werden alternative Möglichkeiten der Informationsarchitektur  aufgezeigt, die bei der Erstellung von Applikationen für mobile Kontexte erwogen werden sollten. Da auch die Dienste bestimmte Anforderungen erfüllen sollten, werden diese im Abschnitt \ref{sub:gestaltung_von_diensten} erläutert. Am Ende dieses Kapitels, werden Gestaltungshinweise für die Entwicklung von Applikationen im Wearable Computing Kontext, die spezielle Anforderungen erfüllen müssen, vorgestellt.
+
+In allen Abschnitten werden keine generellen Gestaltungsprinzipien wie z.B. Gesetze der Nähe vorgestellt. Sondern es wird sich im Wesentlichen auf solche konzentriert, die für den mobilen Kontext als wichtig erscheinen.
 
 \subsection{Bedienelementen und Interaktion}
 \label{sub:Benutzerschnittstellen}
 
-Es gibt eine Vielzahl von Smartphones, sowie deren Eingabe- und Ausgabearten. Der Benutzer kann mit einem Gerät über Touchscreen, Tastatur, Ziffernblock, Trackpoint usw. Interagieren. Jeder dieser Eingabegarten hat einen anderen Charakter. Die folgenden Prinzipien beziehen sich auf  die Eingabe mittels Touchscreen.
+Es gibt eine Vielzahl von Smartphones, sowie deren Eingabe- und Ausgabearten. Der Benutzer kann mit einem Gerät über Touchscreen, Tastatur, Ziffernblock, Trackpoint usw. interagieren. Jeder dieser Eingabegarten hat einen anderen Charakter. Es werden folgenden Prinzipien auf die Eingabe mittels Touchscreenbeziehen beziehen, da solche Benutzerschnittstellen sind für Smartphones am meisten beliebt und verbreitet.
+
 \subparagraph{Bedienelementen auf der graphische Oberfläche} 
 \label{subp:gro_ere_interface_elementen}
 
 Die Einschränkungen kleiner Bildschirme auf einem Smartphone müssen bei der Erstellung von grafischen Benutzeroberflächen besonders beachtet werden. Zu nennen sind hier etwa die physischen Eigenschaften der Fingerkuppe: Laut einer Studie von MIT Touch Lab, ist die menschliche Fingerkuppe im Durchschnitt etwa 10-14mm breit, und die Fingerspitze etwa 8-10mm\cite{Srinivasan:2003uu}.  Pekka Parhi  et.al haben in ihrer Studie \cite{Parhi:2006gh} erforscht, welche optimale Größe von Bedienungselementen für eine einhändige Daumeninteraktion erforderlich ist: Sie setzen die Mindestgröße für getrennte Aufgaben bei $>$ 9,5 \textit{mm} an.  Bei seriellen Erledigungen von Aufgaben sehen sie $>$ 7.7 \textit{mm}als optimal. Größere Bedienelemente weisen keine signifikant präzisere Erledigung der Aufgaben auf.
 Auch die Hersteller von mobilen Betriebssystemen schlagen ähnliche Maße für Bedienelemente vor. Apple setzt eine Mindestgröße von 44 x 44 Punkten \cite{Apple}, Microsoft 7 \textit{mm} oder 26 \textit{px}\cite{lukeGUI} für Elemente voraus.
 
-Nicht nur die Größe der Elemente, sondern auch der Zwischenabstand zwischen ihnen ist wichtig für eine benutzerfreundliche Bedienung der Anwendung. Wie in Bild (HIER FOTO mobilefirst 79) zu sehen ist, muss der Benutzer sich hier anstrengen, um das richtige Element in der Liste auszuwählen. Auch die Möglichkeit den "Cancel" – Buttons unvorhergesehen anzuclicken, kann in diesem Beispiel (BILD) vorhersehbar sein. So ist ein Zwischenabstand zwischen Bedienelementen, der sogenannte Whitespace,  empfohlen. Solche Abstände sollten mindestens von 2\textit{mm} bis 8\textit{px} betragen\cite{lukeGUI} um eine unbeabsichtigte Eingabe zu vermeiden.
+Nicht nur die Größe der Elemente, sondern auch der Zwischenabstand zwischen ihnen ist wichtig für eine benutzerfreundliche Bedienung der Anwendung. Wie in Bild~\ref{fig:login} zu sehen ist, muss der Benutzer sich hier anstrengen, um das richtige Element in der Liste auszuwählen. Auch die Möglichkeit den "Cancel" – Buttons unvorhergesehen anzuklicken, kann in diesem Beispiel vorhersehbar sein (siehe Bild~\ref{fig:login}). So ist ein Zwischenabstand zwischen Bedienelementen, der sogenannte Whitespace,  empfohlen. Solche Abstände sollten mindestens von 2\textit{mm} bis 8\textit{px} betragen\cite{lukeGUI} um eine unbeabsichtigte Eingabe zu vermeiden.
 
+\begin{figure}
+	\centering
+	\begin{subfigure}[b]{0.3\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{img/login.png}
+		\caption{Kein Whitespace bei eine Liste, vgl. \cite{mobileFirst}}
+		\label{fig:login}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.6\textwidth}
+		\centering
+			\includegraphics[width=1\textwidth]{img/cancel.png}
+	\caption{Kein Whitespace bei Login und Cancel, vgl. \cite{mobileFirst}}\label{fig:cancel}
+	\end{subfigure}
+	\caption{Positionierung von Elementen}\label{fig:elementPos}
+\end{figure}
 \subparagraph{Anordnung von Elementen} 
 \label{subp:anordnung_von_elementen}
 
-Die richtige Auslegung von Elementen in der Benutzeroberfläche, kann dem Benutzer helfen, ohne Kraftaufwand oder Änderung der Haltung des Geräts auf die wichtigen Funktionen zuzugreifen. Eine einhändige Interaktion mit Smartphones sollte ermöglicht werden, um das Bedienen im mobilen Kontext zu erleichtern. So wird empfohlen, die wichtigen Elemente so auszulegen, dass sie leicht mit dem Daumen erreicht werden können \cite[Seite 209]{mobileFrontier}. Da etwa 70 bis 90 $\%$ der Menschen Rechtshändig sind, ist es laut \cite[Seite 72]{mobileFirst} verbreitet die Elemente nach der Bequemlichkeit für die Daumenbewegung für Rechtshänder in 3 Bereichen auszulegen, wie im Bild~\ref{fig:rechtsPositioning} zu sehen ist. Da aber keine Benutzer benachteiligt werden sollen, wurden in dieser Arbeit zusätzlich anhand der Ergebnisse aus der Studie \cite{Park:2010tu} die Bereiche so verändert, dass auch Linkshänder erleichterten Zugriff haben. Das  Resultat wird im Bild~\ref{fig:forallPositioning}\cite[Seite 72]{mobileFirst} präsentiert.
+Die richtige Auslegung von Elementen in der Benutzeroberfläche, kann dem Benutzer helfen, ohne hohen Kraftaufwand oder Änderung der Haltung des Geräts auf die wichtigen Funktionen zuzugreifen. Eine einhändige Interaktion mit Smartphones sollte ermöglicht werden, um das Bedienen im mobilen Kontext zu erleichtern. So wird empfohlen, die wichtigen Elemente so auszulegen, dass sie leicht mit dem Daumen erreicht werden können \cite[Seite 209]{mobileFrontier}. Da etwa 70 bis 90 $\%$ der Menschen Rechtshändig sind, ist es laut \cite[Seite 72]{mobileFirst} verbreitet die Elemente nach der Bequemlichkeit für die Daumenbewegung für Rechtshänder in 3 Bereichen auszulegen, wie im Bild~\ref{fig:rechtsPositioning} zu sehen ist. Da aber keine Benutzer benachteiligt werden sollen, wurden in dieser Arbeit zusätzlich anhand der Ergebnisse aus der Studie \cite{Park:2010tu} die Bereiche so verändert, dass auch Linkshänder erleichterten Zugriff haben. Das  Resultat wird im Bild~\ref{fig:forallPositioning}\cite[Seite 72]{mobileFirst} präsentiert.
 
 Die Bedienungselementen, die sehr oft in der Interaktion benutzt werden, sollten in Bereich "Leicht" platziert werden, da sie leicht mit dem Daumen erreicht werden können. Die Elemente im "Ok" Bereich, brauchen dagegen schon ein wenig mehr Daumenbewegung und bieten weniger Komfort für den Anwender. Der Bereich "Greifen" muss meistens mittels einer Greifbewegung erreicht werden, und bietet sich für Navigationselemente an, nicht so oft verwendet werden.
 
@@ -54,23 +73,30 @@ Die meisten Touchgeräte bieten eine direkte Eingabe, mit der natürliche Gesten
 	\begin{center}
 	
 	\includegraphics[width=0.3\textwidth]{img/NUIbsp.png}
-	\caption{Alternative Interaktionsmöglichkeiten}\label{fig:nuibsp}
+	\caption{Alternative Bedienelemente für Interaktion}\label{fig:nuibsp}
 \end{center}
 \end{wrapfigure}
 
 \subparagraph{Designe für wechselde Umgebungen} % (fold)
 \label{subp:designe_f_r_au_eneinsatz}
 
-In der Bewegung, ändern sich stetig die Umgebungen. Diese haben verschiedene Eigenschaften. So wird zum Beispiel ein Benutzer der aus sonnigem Tageslicht in einen dunklen Kinosaal geht und dabei versucht weiter sein Smartphone zu benutzen, von der starke Leuchtkraft des Bildschirms überblendet. Daher ist es zu empfehlen, solche Bedienelemente leicht erreichbar zu platzieren, die die Helligkeit ( vgl. \cite[ff Seite 418]{mobileInteraces}) regulieren. Dementsprechend sollten auch andere Auswirkungen von Umgebungswechseln berücksichtigt werden.
-\newline
-
+In der Bewegung, ändern sich stetig die Umgebungen. Diese haben verschiedene Eigenschaften. So wird zum Beispiel ein Benutzer der aus sonnigem Tageslicht in einen dunklen Kinosaal geht und dabei versucht weiter sein Smartphone zu benutzen, von der starke Leuchtkraft des Bildschirms überblendet. Daher ist es zu empfehlen, solche Bedienelemente leicht erreichbar zu platzieren, die die Helligkeit (vgl. \cite[ff Seite 418]{mobileInteraces}) regulieren. Dementsprechend sollten auch andere Auswirkungen von Umgebungswechseln berücksichtigt werden.
 
 \subsection{Informationsarchitektur}
 \label{sec:Informationsaufbereitung}
 
 In diesem Kapitel werden verschiedene Prinzipien für die Informationsarchitektur präsentiert.
 Menschen in mobilen Kontexten haben viele Anforderungen an mobile Applikationen. Diese sind anders als für stationäre Arbeitsplätze. Um eine gut benutzbare Software für solchen Szenerien zu entwickeln, ist daher wichtig die Aktionen sowie die Vorlieben des Benutzers zu kennen und dementsprechend auch zu berücksichtigen. Man sollte wissen, warum und wann ein Anwender sein Smartphone im mobilen Kontext benutzt und die Anwendungen auch danach ausrichten.
-Eine Einteilung der Benutzer in verschiedene Kategorien kann dabei helfen, spezielle Wünsche, sowie Erwartungen an die Applikationen herauszufinden.
+
+Jakob Nielsen formuliert in seinem Artikel \footnote{http://www.nngroup.com/articles/mobile-site-vs-full-site/, dies ist ein  Ausschnitt aus dem Bericht "Mobile Website and Application" http://www.nngroup.com/reports/mobile-website-and-application-usability/} generelle Prinzipien, für eine Optimierung der vorhandenen Webseiten für den Gebrauch auf mobilen Geräten:
+\begin{itemize}
+	\item \textbf{Reduktion der Funktionalität}. So sollen nur Funktionen angeboten werden, deren Anwendungsfall in einen mobilen Kontext passt
+	\item \textbf{Beschneidung von Inhalten}, um die Fülle von Text zu verkleinern und um die sekundären Informationen auf anderen Seiten auszulagern
+	\item \textbf{Vergrößerung von Elementen auf der Benutzeroberfläche}
+\end{itemize}
+
+Allerdings gibt es auch kritische Stimmen, die bezweifeln, dass die Prinzipien von Jakob Nielsen einen richtigen Weg für die Entwicklung von Applikationen für mobile Geräte aufzeigen\footnote{http://www.netmagazine.com/opinions/nielsen-wrong-mobile}. So wird ihm zum Beispiel vorgeworfen, dass man statt der Reduktion von Funktionalitäten die Zusatzmöglichkeiten der mobilen Geräte berücksichtigen solle. Eine Einteilung der Benutzer in verschiedene Kategorien kann dabei helfen, spezielle Wünsche, sowie Erwartungen an die Applikationen herauszufinden.
+
 Die Einteilung, kann laut Google anhand des Anwenderverhaltens vorgenommen werden. Es wurden drei Gruppen identifiziert: "urgent now", "repetitive now", "bored now"\cite{googleUsers}. Benutzer der Gruppe "Urgent now" wollen wenige Informationen schnell bekommen. Ein Beispiel wäre etwa die Adresse eines  Arztes oder Buchladens. Anwendungen, die diese Erwartung erfüllen wollen, sollten etwa mit Hilfe von Ortsdaten, wo sich der Benutzer befindet, die suche initiieren. So sollen die Ergebnisse schnell und ohne bewusste Benutzereingabe geliefert werten. Benutzer der Gruppe "Repretitve now" wollen die gleiche Art von Informationen, wie etwa die Wettervorhersage oder Aktienkurse, immer wieder aufrufen. Solche Informationen sollten schnell sichtbar oder aufrufbar sein. Benutzer die der Gruppe "bored now" angehören, sind oft in einem Zustand, wo sie viel Zeit für die Interaktion mit dem Gerät haben, etwa in der Empfangshalle vom Flughafen oder in öffentlichen Verkehrsmitteln. Die Erwartungen der Benutzer in diese Situationen ähnelt denen der Benutzer, die mit einem stationären Rechner ihre Aufgaben erledigen. Allerdings verfügt der Benutzer im mobilen Kontext über andere Ausgabe- sowie Eingabegeräte und kann so jederzeit für unbestimmte Zeit von der Bedienung des Gerätes unterbrochen werden. So können in einem "bored now" Szenario Aufgaben erledigt werden, die mehr Zeit und kognitive Auslastung voraussetzen, als bei "urgent now" oder "repetitive now".
 
 Die Vorgestellte Einteilung ist zwar nützlich, aber nicht gründlich genug. Daher kann man auch eine Einteilung anhand von Arten der Interaktion statt des Benutzerverhalten vornehmen. Sie ist hilfreicher, um einem Fokus auf die Gestaltung der Informationsarchitektur zu bekommen. Die  Arten von Interaktionen im mobilen Kontext können in vier Kategorien eingeteilt werden( anhand \cite[Seite 50]{mobileFirst}):
@@ -79,28 +105,17 @@ Die Vorgestellte Einteilung ist zwar nützlich, aber nicht gründlich genug. Dah
  	\item[Suche (wichtige Information, lokal)] Ich brauche schnell eine Antwort zu meiner Frage. Sie kann auch oft wiederholt vorkommen, und ist bezogen auf meine Position in der Welt
  	\item[Erforschen/Spielen (gelangweilt, lokal)] Ich habe Zeit, und will eine kurze Ablenkung
  	\item[Einchecken/Status (Wiederholung/kleine Aufgaben)] Irgendwas ändert sich, und will ich das Neuste wissen oder teilen
- 	\item[Editieren/Kreieren (plötzliche Veränderungen/ kleine Aufgaben)] Ich muss schnell etwas erledigen
+ 	\item[Editieren/Kreieren (plötzliche Veränderungen/kleine Aufgaben)] Ich muss schnell etwas erledigen
  \end{itemize} 
 
-Diese Kategorisierung anhand von Arten der Benutzerinteraktion hilft dessen Bedürfnissen zu erspüren und somit eine auf den Benutzer abgestimmte Applikation zu gestalten. Will man etwa eine Applikation für Wetteraussichten gestalten, so kann man die Benutzer mit Intentionen der Kategorie \textbf{Suche} bedienen, indem man auf dem Startbildschirm das Wetter anhand der lokalen Position des Benutzers anzeigt. Um die Gruppe "Einchecken/Status" zu bedienen, sollte man auch die Möglichkeit bieten, dem Benutzer das Wetter für von ihm abgespeicherte Städten anzuzeigen. Die Gruppe "Erforschen/Spielen", sollte Zusatzfunktionen wie einen 14 Tage Wetterbericht, eine Regenkarte etc anbieten, die durch Navigation auf dem Anfangsbildschirm erreicht werden können.
-
-
-
-Jakob Nielsen formuliert in seinem Artikel \footnote{http://www.nngroup.com/articles/mobile-site-vs-full-site/, dies ist ein  Ausschnitt aus dem Bericht "Mobile Website and Application" http://www.nngroup.com/reports/mobile-website-and-application-usability/} generelle Prinzipien, für eine Optimierung der vorhandenen Webseiten für den Gebrauch auf mobilen Geräten:
-\begin{itemize}
-	\item \textbf{Reduktion der Funktionalität}. So sollen nur Funktionen angeboten werden, deren Anwendungsfall in einen mobilen Kontext passt
-	\item \textbf{Beschneidung von Inhalten}, um die Fülle von Text zu verkleinern und um die sekundären Informationen auf anderen Seiten auszulagern
-	\item \textbf{Vergrößerung von Elementen auf der Benutzeroberfläche}
-\end{itemize}
-Allerdings gibt es auch kritische Stimmen, die bezweifeln, dass die Prinzipien von Jakob Nielsen einen richtigen Weg für die Entwicklung von Applikationen für mobile Geräte aufzeigen\footnote{http://www.netmagazine.com/opinions/nielsen-wrong-mobile}. So wird ihm zum Beispiel vorgeworfen, dass man statt der Reduktion von Funktionalitäten die Zusatzmöglichkeiten der mobilen Geräte berücksichtigen solle. 
-
+Diese Kategorisierung anhand von Arten der Benutzerinteraktion hilft dessen Bedürfnissen zu erspüren und somit eine auf den Benutzer abgestimmte Applikation zu gestalten. Will man etwa eine Applikation für Wetteraussichten gestalten, so kann man die Benutzer mit Intentionen der Kategorie \textbf{Suche} bedienen, indem man auf dem Startbildschirm das Wetter anhand der lokalen Position des Benutzers anzeigt. Um die Gruppe "Einchecken/Status" zu bedienen, sollte man auch die Möglichkeit bieten, dem Benutzer das Wetter für von ihm abgespeicherte Städten anzuzeigen. Die Gruppe "Erforschen/Spielen", sollte Zusatzfunktionen wie einen 14 Tage Wetterbericht, eine Regenkarte anbieten, die durch Navigation von dem Startbildschirm erreicht werden können.
 
 Es gibt auch generelle Ideen, die eine vorhandene Applikation für den mobilen Kontext optimieren oder neue Applikation gestalten oder umorganisieren können. In folgenden Unterkapiteln werden die wichtigsten Ideen präsentiert. 
 
 \subparagraph{Mach es schlank} 
 \label{subp:entferne_das_fett}
 
-Wie schon weiter vorne erwähnt wurde, empfiehlt Jakob Nielsen, die Informationsangebote auf mobilen Webseiten zu reduzieren. So soll unnötiger Text entweder auf anderen Seiten verlagert, oder am besten weggestrichen werden, da sie auf kleinen Geräten schwierig zu lesen sind. \cite[Seite 102]{Nielsen:2012wj}. So muss der Benutzer ständig blättern, braucht mehr Zeit zum Lesen und es ist auch schwieriger zu Textpassagen vor- oder zurück zu springen..
+Wie schon weiter vorne erwähnt wurde, empfiehlt Jakob Nielsen, die Informationsangebote auf mobilen Webseiten zu reduzieren. So soll unnötiger Text entweder auf anderen Seiten verlagert, oder am besten weggestrichen werden, da sie auf kleinen Geräten schwierig zu lesen sind. \cite[Seite 102]{Nielsen:2012wj}. So muss der Benutzer ständig blättern, braucht mehr Zeit zum Lesen und es ist auch schwieriger zu Textpassagen vor- oder zurück zu springen.
 
 Auch die Funktionsangebote sollen für den mobilen Kontext angepasst werden. Als Beispiel kann hier die Amazon Webseite dienen (siehe Bild~\ref{fig:amazon}. So wird bei der Auswahl von einem Produkt auf der mobilen Webseite von Amazon, ein Bild, der Preis und die Möglichkeit für einen sofortigen Kaufen oder den Artikel zu Merken angeboten. Im Vergleich zu einer Desktop Webseite ist das  Funktionsangebot reduziert (siehe Bild~\ref{fig:amazonFull}). Um mehr Informationen über das Produkt zu bekommen, was für die Gruppe "Erforschen/Spielen" wurden diese auf sekundäre Seiten ausgelagert
 
@@ -109,14 +124,14 @@ Auch die Funktionsangebote sollen für den mobilen Kontext angepasst werden. Als
 	\begin{subfigure}[b]{0.3\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{img/amazon.png}
-		\caption{Mobile Webseite}\label{fig:amazon}
+		\caption{Mobile Webseite von Amazon}\label{fig:amazon}
 	\end{subfigure}
 	\begin{subfigure}[b]{0.6\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{img/amazonFull.png}
 		\caption{Normale Webseite}\label{fig:amazonFull}
 	\end{subfigure}
-	\caption{Webseiten von Amazon}\label{fig:amazonSites}
+	\caption{Desktop Webseiten von Amazon}\label{fig:amazonSites}
 \end{figure}
 
 \subparagraph{Mehr Inhalt, weniger Navigation} 
@@ -127,27 +142,27 @@ Auch die Konzentration auf den Inhalt und nicht die Navigation selbst sollte im 
 \begin{wrapfigure}{r}{0.5\textwidth}
 	\begin{center}
 	\includegraphics[width=0.3\textwidth]{img/youtube.png}
-	\caption{Youtube}\label{fig:youtube}
+	\caption{Youtube App}\label{fig:youtube}
 \end{center}
 \end{wrapfigure}
 
 \subparagraph{Schneller Zugriff auf wichtige Informationen} 
 \label{subp:subparagraph_name}
 
-Wie im Szenario "Suche", will der Benutzer nicht immer in das Innenleben von Programmen eintauchen, nur um einen kleinen wichtigen Bruchteil der Information zu gewinnen. Deshalb sollten wesentliche Informationen schon beim Überblick erkennbar sein(vgl. \cite[Seite 54]{mobileFrontier} und \cite{Neil:2012uf}). Als Beispiel dient z. B. die iPhone Startansicht. Hier wurden die Piktogramme so gestaltet, dass sie wichtige Information selbst beinhalten. So beinhaltet etwa die Piktogramm von iOS Kalender den heutigen Tag(siehe Beispiel in Bild~\ref{fig:iconIos}), oder die Erinnerungs App Hinweise auf die Anzahl der Erinnerungen.
+Wie im Szenario "Suche", will der Benutzer nicht immer in das Innenleben von Programmen eintauchen, nur um einen kleinen wichtigen Bruchteil der Information zu gewinnen. Deshalb sollten wesentliche Informationen schon beim Überblick erkennbar sein(vgl. \cite[Seite 54]{mobileFrontier} und \cite{Neil:2012uf}). Als Beispiel dient z. B. die iPhone Startansicht. Hier wurden die Piktogramme so gestaltet, dass sie wichtige Information selbst beinhalten. So beinhaltet etwa die Piktogramm von iOS Kalender den heutigen Tag, oder die Erinnerungs App Hinweise auf die Anzahl der Erinnerungen (siehe Beispiel in Bild~\ref{fig:iconIos}).
 
-\begin{wrapfigure}{r}{0.5\textwidth}
+\begin{figure}[b]
 	\begin{center}
 	
 	\includegraphics[width=0.3\textwidth]{img/iconIos.png}
 	\caption{Schneller Zugriff auf Informationen}\label{fig:iconIos}
 \end{center}
-\end{wrapfigure}
+\end{figure}
 
-\subparagraph{Reduziere Kognitive Aufgaben} 
+\subparagraph{Reduziere kognitive Aufgaben} 
 \label{subp:reduziere_kognitive_aufgaben_}
 
-Im mobilen Kontext ist der Benutzer meistens mit verschiedenen Aufgaben beschäftigt. So ist auch die Verfügbarkeit der Aufmerksamkeit viel weniger, als etwa im Büro. Bei Gestaltung von Applikationen, mit denen in mobilen Kontexten gearbeitet werden soll, sollte dieser Umstand immer berücksichtigt werden. Es sollten daher Anwendungen entstehen, die unnötige Denkarbeit und damit Konzentrationsbedarf abnehmen. Zum Beispiel können die typischen "Wo bin ich Hinweise“ angezeigt werden, oder eine klare Strukturierung der Navigation sowie des Layouts viel in reizüberfluteten Umgebungen helfen. 
+Im mobilen Kontext ist der Benutzer meistens mit verschiedenen Aufgaben beschäftigt. So ist auch die Verfügbarkeit der Aufmerksamkeit viel weniger, als etwa im Büro. Bei Gestaltung von Applikationen, mit denen in mobilen Kontexten gearbeitet werden soll, sollte dieser Umstand immer berücksichtigt werden. Es sollten daher Anwendungen entstehen, die unnötige Denkarbeit und damit Konzentrationsbedarf abnehmen. Zum Beispiel können die typischen "Wo bin ich gerade" Hinweise angezeigt werden, oder eine klare Strukturierung der Navigation sowie des Layouts viel in reizüberfluteten Umgebungen helfen. 
 
 Auch die Elemente der Benutzeroberfläche dürfen den Benutzer nicht überfordern. So sollten unnötige Animationen in einer Applikation vermieden werden, da sie den Anwender unnötig ablenken oder seine Aufmerksamkeit für längere Zeit in Anspruch nehmen als nötig. Solche Ablenkungen können den Nutzer sogar gefährden, da er von seiner Tätigkeiten in der realen Welt abgelenkt ist. Ein typisches Beispiel hierfür sind Unfälle, die z.B. bei Spaziergängen auftreten können (vgl. \cite{Nasar:2008cc}).
 
@@ -159,13 +174,13 @@ Eine hierarchisch aufgebaute Navigation ist ein viel benutztes Navigationsmuster
 \subparagraph{Nutzung alternativer Ein- und Ausgabequellen}
 \label{subp:nutze_alternative_eingabenger_ten}
 
-Die Interaktion mit mobilen Gerät kann in einem mobilen Kontext durch vieles beeinflusst werden. So darf der Benutzer etwa beim Fahren einen Autos das Smartphone nicht mit der Hand bedienen und der Blick kann nicht immer auf den Bildschirm gerichtet werden. So sollten auch andere Ein- oder Ausgabequellen benutzt werden. Im Auto kann dies z.B. die Sprache als sein.
+Die Interaktion mit mobilen Gerät kann in einem mobilen Kontext durch vieles beeinflusst werden. So darf der Benutzer etwa beim Fahren einen Autos das Smartphone nicht mit der Hand bedienen und der Blick kann nicht immer auf den Bildschirm gerichtet werden. So sollten auch andere Ein- oder Ausgabequellen benutzt werden. Im Auto kann dies z.B. die Sprache sein.
 
-Auch die Geolokalisierung kann sehr behilflich sein. Etwa um dem Benutzer Informationen anzubieten, wenn er einen bestimmten Ortes erreicht ohne diesen vorher in seine Applikation eingegeben zu haben. Eine Geolokalisierung kann dem Benutzer auch helfen, bei einer Suche nur die Informationen zu erhalten, die relevant für den Ort sind, an dem er sich gerade befindet. Ein Beispiel wäre hier die Suche nach einem Kaffee. Mit Hilfe der Geolokalisierung können nur die Kaffees angezeigt werden, die sich in unmittelbarer Nähe befinden und nicht alle Kaffees aus z.B. der ganzen Stadt. 
+Auch die Geolokalisierung kann sehr behilflich sein. Etwa um dem Benutzer Informationen anzubieten, wenn er einen bestimmten Ort erreicht ohne diesen vorher in seine Applikation eingegeben zu haben. Eine Geolokalisierung kann dem Benutzer auch helfen, bei einer Suche nur die Informationen zu erhalten, die relevant für den Ort sind, an dem er sich gerade befindet. Ein Beispiel wäre hier die Suche nach einem Kaffee. Mit Hilfe der Geolokalisierung können nur die Kaffees angezeigt werden, die sich in unmittelbarer Nähe befinden und nicht alle Kaffees aus z.B. der ganzen Welt. 
 
 Die Benutzung von Status-Led oder Vibration kann den Benutzer auf Ereignisse Hinweisen, ohne dass er immer auf den Bildschirm schauen muss. So kann man in Android Notifications API benutzen, um etwa die Status-LED in bestimmten Farbe und Intervallen blinken zu lassen (vgl. \cite{androidNotApi}). Benachrichtigungen bergen aber auch viele Gefahren, wenn sie nicht durchdacht benutzt werden. So kann es leicht passieren, dass der Benutzer mit Benachrichtigungen regelrecht überflutet wird und sich nicht mehr auf die Erfüllung seiner gewünschten Aufgaben konzentrieren kann, da er permanent von Benachrichtigungen abgelenkt wird.
 
-\subparagraph{Gestaltung für Unterbrechungen }
+\subparagraph{Gestaltung für Unterbrechungen}
 \label{subp:erm_gliche_eine_fortsetzung}
 
 In mobilen Kontexten wird der Benutzer oft in der Interaktion mit einem mobilen Gerät unterbrochen oder er hat nicht genügend Zeit seine Aufgaben zu beenden. Es sollten daher Möglichkeiten angeboten werden, die Aufgaben später zu erledigen. So sollten etwa Benutzereingaben oder Anwendungszustand nach einer bestimmten Zeit der Nichtnutzung nicht zurückgesetzt werden um dem Benutzer eine Fortsetzung seiner Aufgabe zu ermöglichen.
@@ -177,13 +192,13 @@ Außerdem solle man dem Benutzer die Möglichkeit geben, bei bestimmten Kontexte
 \subparagraph{Fokussierung auf Erfahrungen, die nur mobil auftreten können} % (fold)
 \label{subp:fokussiere_auf_erfahrungen_die_nur_mobil_auftreten_k_nnen}
 
-In diesem Kapitel wurden vier Kategorien eingeführt, die die Art der Interaktion mit dem mobilen Endgerät beschreiben. Die Anwendungen für den mobilen Kontext sollten diese daher  auch bedienen, und nicht versuchen einen stationären Arbeitsplatz zu imitieren. Auch die Erfahrungen, die nur mobil auftreten können, sollten berücksichtigt werden. 
+In diesem Kapitel wurden vier Kategorien eingeführt, die die Art der Interaktion mit dem mobilen Endgerät beschreiben. Die Anwendungen für den mobilen Kontext sollten diese daher auch bedienen, und nicht versuchen einen stationären Arbeitsplatz zu imitieren. Auch die Erfahrungen, die nur mobil auftreten können, sollten berücksichtigt werden. 
 
-Zum Beispiel sollte eine Notiz Applikationen dem Benutzer ermöglichen, Lokalisierungsinformationen oder Schnelle Schnappschüsse zu speichern. Oder eine Applikation, die Preisvergleiche macht, sollte eine Barcode-Lesefunktion haben, um dem Benutzer beim Besuch eines Ladens zu ermögliche, die Preise zu scannen.  Auch eine Rabatcoupon-Erinnerung bei Besuchen eines bestimmten Laden könnte dem Benutzer Freude an der Applikation bereiten (vgl. \cite{smartOnline})
+Zum Beispiel sollte eine Notiz Applikationen dem Benutzer ermöglichen, Lokalisierungsinformationen oder Schnelle Schnappschüsse zu speichern. Oder eine Applikation, die Preisvergleiche macht, sollte eine Barcode-Lesefunktion haben, um dem Benutzer beim Besuch eines Ladens zu ermögliche, die Preise zu scannen.  Auch eine Rabattcoupon-Erinnerung bei Besuchen eines bestimmten Laden könnte dem Benutzer Freude an der Applikation bereiten (vgl. \cite{smartOnline})
 \newline
 
 In diesem Teilkapitel wurden die vier Arten der Interaktion, sowie wichtige Hinweise für die Erstellung von Applikationen hinsichtlich ihre Informationsarchitektur gegeben. So wurde empfohlen die Applikationen nicht mit zu viel Text, Funktionalitäten und Navigationstiefe zu überfrachten um den Benutzer nicht zu überfordern. Stattdessen sollte sich mehr auf den knappen und schnell für den Benutzer aufrufbaren wichtigen Inhalt konzentrieren werden. 
-In nächsten Kapitel werden Hinweise zur Gestaltung von Diensten gegeben.
+In nächsten Teilkapitel werden Hinweise zur Gestaltung von Diensten gegeben.
 
 \subsection{Gestaltung von Diensten}
 \label{sub:gestaltung_von_diensten}
@@ -217,11 +232,11 @@ In diesem Kapitel wurden drei Muster für die Gestaltung von Diensten für den m
 \label{sub:wearable_computers}
 
 
-Wearable Computing, oder tragbare Datenverarbeitung, ist das Forschungsgebiet, das sich mit der Entwicklung von tragbaren Computersystemen (Wearable Computers) beschäftigt \footnote{citate aus wikipedia }. So wird versucht, alltägliche Aktivitäten oder Bedürfnisse des Benutzers  mit Hilfe von Computersystemen zu erleichtern oder auch erst zu ermöglichen. Dabei tritt aber das Computersystem in den Hintergrund. Die Geräte können von beliebiger Form sein und jede beliebige Funktion erfüllen: Die Möglichkeiten reichen hier z.B. von einer Armbanduhr, die ähnlich den Smartphone funktioniert \footnote{http://www.zeit.de/digital/mobil/2013-01/smartwatch-wearable-computer} bis hin zu  einem  Ring, der den Puls sowie den Sauerstoffgehalt im Blut misst \footnote{http://www.sciencephoto.com/media/349431/view}.  Um die Einführung in die Gestaltungsprinzipien des Wearable Computing kurz zu halten, konzentriert sich dieses Kapitel auf die Benutzung von Wearable Computing im Arbeitsumfeld, auf die Forschung in TZI Wearable Labs sowie auf Head-Up-Display (HUD) Ausgabegeräte.
+Wearable Computing, oder tragbare Datenverarbeitung, ist das Forschungsgebiet, das sich mit der Entwicklung von tragbaren Computersystemen (Wearable Computers) beschäftigt\cite{wikiWearable}. So wird versucht, alltägliche Aktivitäten oder Bedürfnisse des Benutzers  mit Hilfe von Computersystemen zu erleichtern oder auch erst zu ermöglichen. Dabei tritt aber das Computersystem in den Hintergrund. Die Geräte können von beliebiger Form sein und jede beliebige Funktion erfüllen: Die Möglichkeiten reichen hier z.B. von einer Armbanduhr, die ähnlich den Smartphone funktioniert (vgl. \cite{zeitPc}) bis hin zu  einem  Ring, der den Puls sowie den Sauerstoffgehalt im Blut misst (vlg. \cite{urhWearable}).  Um die Einführung in die Gestaltungsprinzipien des Wearable Computing kurz zu halten, konzentriert sich dieses Kapitel auf die Benutzung von Wearable Computing im Arbeitsumfeld, auf die Forschung in TZI Wearable Labs sowie auf Head-Up-Display (HUD) Ausgabegeräte.
 
 Wearable Computing kann unter auch das Arbeiten in der Industrie (Wartungs-, Lagerarbeit), in der Gesundheitspflege und in anderen Bereichen erleichtern \cite{Witt:2006hi},\cite{Lawo:2008gg}). So besteht eine typische Arbeitskleidung aus einem HUD, einer tragbaren Tastatur sowie einem Handschuh mit Steuerungskomponenten. Die Ausgabe von den Computern kann mittels eines Displays in einem HUD benutzt werden, und die Eingabe mittels einer Tastatur sowie einem Steuerungshandschuh erfüllt werden. 
 
-Anders als in stationären Arbeitsumfeldern, wo meistens nur eine Hauptaufgabe an einem Rechner bearbeitet wird, wird in Wearable Computing erwartet, dass der Benutzer zwei Aufgaben erfüllt \cite{Witt:2006hi}. Diese Aufgaben können in primäre und sekundäre Aufgaben eingeteilt werden. Die primäre Aufgabe besteht meistens aus einer Interaktion mit der Umwelt, etwa dem Drehen einer Schraube oder dem Scannen eines Paketes. Primäre Aufgaben können durch die Benutzung von tragbaren Computersystemen erleichtert werden, indem sie diese als sekundären Aufgaben einteilen. Sekundäre Aufgaben wären etwa die Bestätigung nach dem Einschrauben einer Schraube oder eine visuelle Information über ein gerade eingescanntes Paket. Falls eine sekundäre Aufgaben existiert und erledigt werden muss, soll dabei der Benutzer nicht zu sehr von der primären Aufgabe ablenkt werden. Daher muss er auf adäquate Weise auf die sekundäre Aufgabe aufmerksam gemacht werden. Um die Aufmerksamkeit des Benutzers auf die sekundäre Aufgabe zu lenken, können 4 Benachrichtigungssysteme benutzt werden: "sofortige", "verhandelbare", "vermittelte" und "geplante" Benachrichtungungen \cite{McFarlane:1999um}\cite{Nilsson:cq}. Bei der sofortigen Benachrichtigung, wird der Benutzer sofort über neue Informationen informiert. Solche Benachrichtigungen sind etwa nützlich bei der Betreuung von Auszubildenden in Autowerkstätten die durch einen Computer koordiniert wird. So können anhand eines Arbeitsschritts, die benötigten Werkzeuge auf den HUD angezeigt werden. Falls eine Schraube am falschen Ort befestigt wurde, wird  der Benutzer so sofort informiert. Bei verhandelbare Benachrichtigungssysteme wird der Anwender über ein Ereignis auf seinem HUD und kann dann selber entscheiden, ob er auf dieses regieren will. So kann etwa der Lagerarbeiter beim Eintreffen neuer Pakete im Lager informiert werden, und somit entscheiden ob er die dafür anfallenden Tätigkeit sofort erledigen möchte. Bei einer vermittelten Benachrichtigung, können andere Arten der Ausgabe für Benachrichtigungen verwendet werden, die nicht so aufdringlich sind wie die Anzeige auf einem HUD. Ein Beispiel hierfür wäre eine Audiodatei, die abgespielt wird um den Benutzer über ein Ereignis zu informieren. Falls der Benutzer darauf Reagieren möchte, kann er  dies mittels eines Eingabegerätes tun. Bei "geplanten" Benachrichtigungen werden die Aufgaben  akkumuliert und in festgelegten Intervallen angezeigt. In der Studie \cite{Nilsson:cq}  haben "geplante" Benachrichtigungssysteme sowohl bei der Effizienz als auch bei der subjektiven Meinung der Probanden,  am besten abgeschnitten. Dies sollte bei der Entwicklung von Anwendungen in Betracht gezogen werden.
+Anders als in stationären Arbeitsumfeldern, wo meistens nur eine Hauptaufgabe an einem Rechner bearbeitet wird, wird in Wearable Computing erwartet, dass der Benutzer zwei Aufgaben erfüllt \cite{Witt:2006hi}. Diese Aufgaben können in primäre und sekundäre Aufgaben eingeteilt werden. Die primäre Aufgabe besteht meistens aus einer Interaktion mit der Umwelt, etwa dem Drehen einer Schraube oder dem Scannen eines Paketes. Primäre Aufgaben können durch die Benutzung von tragbaren Computersystemen erleichtert werden, indem sie diese als sekundären Aufgaben einteilen. Sekundäre Aufgaben wären etwa die Bestätigung nach dem Einschrauben einer Schraube oder eine visuelle Information über ein gerade eingescanntes Paket. Falls eine sekundäre Aufgaben existiert und erledigt werden muss, soll dabei der Benutzer nicht zu sehr von der primären Aufgabe ablenkt werden. Daher muss er auf adäquate Weise auf die sekundäre Aufgabe aufmerksam gemacht werden. Um die Aufmerksamkeit des Benutzers auf die sekundäre Aufgabe zu lenken, können 4 Benachrichtigungssysteme benutzt werden: "sofortige", "verhandelbare", "vermittelte" und "geplante" Benachrichtungungen \cite{McFarlane:1999um}\cite{Nilsson:cq}. Bei der sofortigen Benachrichtigung, wird der Benutzer sofort über neue Informationen informiert. Solche Benachrichtigungen sind etwa nützlich bei der Betreuung von Auszubildenden in Autowerkstätten die durch einen Computer koordiniert wird. So können anhand eines Arbeitsschritts, die benötigten Werkzeuge auf den HUD angezeigt werden. Falls eine Schraube am falschen Ort befestigt wurde, wird  der Benutzer so sofort informiert. Bei verhandelbare Benachrichtigungssysteme wird der Anwender über ein Ereignis auf seinem HUD und kann dann selber entscheiden, ob er auf dieses regieren will. So kann etwa der Lagerarbeiter beim Eintreffen neuer Pakete im Lager informiert werden, und somit entscheiden ob er die dafür anfallenden Tätigkeit sofort erledigen möchte. Bei einer "vermittelten" Benachrichtigung, können andere Arten der Ausgabe für Benachrichtigungen verwendet werden, die nicht so aufdringlich sind wie die Anzeige auf einem HUD. Ein Beispiel hierfür wäre eine Audiodatei, die abgespielt wird um den Benutzer über ein Ereignis zu informieren. Falls der Benutzer darauf Reagieren möchte, kann er  dies mittels eines Eingabegerätes tun. Bei "geplanten" Benachrichtigungen werden die Aufgaben  akkumuliert und in festgelegten Intervallen angezeigt. In der Studie \cite{Nilsson:cq}  haben "geplante" Benachrichtigungssysteme sowohl bei der Effizienz als auch bei der subjektiven Meinung der Probanden,  am besten abgeschnitten. Dies sollte bei der Entwicklung von Anwendungen in Betracht gezogen werden.
 
 
 In diesem Kapitel wurde mehrere Hinweise, die für die Gestaltung von Diensten, Benutzeroberflächen sowie Funktionalitäten für Anwendungen im mobilen Kontext benutzt werden sollten erläutert. Im nächsten Kapitel wird eine Beispielanwendung vorgestellt und analysiert.
