@@ -39,6 +39,11 @@
 \usepackage{float}
 \usepackage{wrapfig}
 
+% deutsche Silbentrennung
+\usepackage[ngerman]{babel}
+\usepackage{lmodern}
+\usepackage{blindtext}
+
 %\newif\ifpdf
 %\ifx\pdfoutput\undefined
 %\pdffalse % we are not running PDFLaTeX
@@ -53,7 +58,7 @@
 \usepackage{graphicx}
 \fi
 
-\usepackage{caption}
+\usepackage[bf]{caption}
 \usepackage{subcaption}
 % References as label hack
 \makeatletter
@@ -89,5 +94,5 @@
 \input{text/beispiel.tex}
 
 \bibliographystyle{plain}
-\bibliography{sauliusPapBib,sauliusBib, thorbenBib, dimaBib}
+\bibliography{sauliusPapBib,sauliusBib,thorbenBib,dimaBib}
 \end{document}
