@@ -1,6 +1,6 @@
 %!TEX root = ../abgabe.tex
 
-\section{Beispiel}
+\section{Redesign von ''AutoTrader''}
 
 Geschrieben von: \textbf{Hans-Thorben Juilfs}
 \newline
@@ -22,62 +22,71 @@ Zunächst wird das Logo und das ensprechende Re-Design beschrieben:\\
  \centering
  \includegraphics[height=0.10\textheight]{img/logo.png}
  \caption{Re-Design des Logos}
+ \label{fig:logo}
 \end{figure}
 
-Ein Logo wird nach Vorschrift von Apple Inc. immer viereckig, mit abgerundeten Ecken dargestellt. Diese Limitation liegt für Android app-logos nicht vor. Hier wird mehr künstlerische Freiheit gegeben. Um dies zu verdeutlichen wird -einfach ein Teil des iOS app-logos genommen und als neues Logo angepasst.\cite{AndroidDesignPatterns}
+Ein Logo wird nach Vorschrift von Apple Inc. immer viereckig, mit abgerundeten Ecken dargestellt. Diese Limitation liegt für Android App-logos nicht vor. Hier wird mehr künstlerische Freiheit gegeben. Um dies zu verdeutlichen wird einfach ein Teil des iOS App-logos genommen und als neues Logo angepasst(siehe Abbildung~\ref{fig:logo}).(\cite{AndroidDesignPatterns} Seite 5)
 
+\subsection{Redesign}
+\label{sub:actionbars}
 
 \subparagraph{Vorher}
 \label{subp:vorher}
-Ersteinmal beschreibt der Autor Greg Nudelman das Aussehen der App bevor das Design angepasst wurde. Hierbei wird aufgezeigt, dass ein großer Knopf mit der Aufschrift ''Settings'' nichts an dem angestammten Platz in der oberen rechten Ecke des Bildschirmes zu suchen hat, da es sich dabei um eine der wichtiges Positionen auf der GUI handelt. Hinzukommt, dass der Knopf keine Einstellungen zeigt, wenn er ausgelöst wurde, sondern lediglich eine ''Anwalts''-Seite zeigt, auf der sich ''Privacy Policy'', ''Visitor Agreement'' und ein Knopf mit der Aufschrift ''Email-Feedback'' befinden.\cite{AndroidDesignPatterns}\\
+Ersteinmal beschreibt der Autor Greg Nudelman das Aussehen der App bevor das Design angepasst wurde. Hierbei wird aufgezeigt, dass ein großer Knopf mit der Aufschrift ''Settings'' nichts an dem angestammten Platz in der oberen rechten Ecke des Bildschirmes zu suchen hat, da es sich dabei um eine der wichtiges Positionen auf der GUI handelt. Hinzukommt, dass der Knopf keine Einstellungen zeigt, wenn er ausgelöst wurde, sondern lediglich eine ''Anwalts''-Seite zeigt, auf der sich ''Privacy Policy'', ''Visitor Agreement'' und ein Knopf mit der Aufschrift ''Email-Feedback'' befinden(\cite{AndroidDesignPatterns} Seite 6).\\
 
 \begin{figure}[h]
  \centering
  \includegraphics[height=0.40\textheight]{img/Design1.png}
- \caption{Re-Design des Logos}
+ \caption{Design der GUI1}
+ \label{fig:design1}
 \end{figure}
 
-Da der ''Settings''-Knopf so einen wichtigen Platz einnimmt, werden wichtigere Funktionen, wie ''Find cars'', ''Find dealer'' oder ''Scan \& Find'' in den Hintegrund gedrängt und sind in einer einem älteren Android nachempfundenen navigation bar menu versteckt.
+Da der ''Settings''-Knopf so einen wichtigen Platz einnimmt, werden wichtigere Funktionen, wie ''Find cars'', ''Find dealer'' oder ''Scan \& Find'' in den Hintegrund gedrängt und sind in einer einem älteren Android nachempfundenen navigation bar menu versteckt. Beides wird in Abbildung~\ref{fig:design1} und Abbildung~\ref{fig:design2} durch eine rote Hand angezeigt.
 
 \begin{figure}[h]
  \centering
  \includegraphics[height=0.40\textheight]{img/Design2.png}
- \caption{Re-Design des Logos}
+ \caption{Design der GUI2}
+ \label{fig:design2}
 \end{figure}
 
 \subparagraph{Nachher}
 \label{subp:nachher}
+Anschließend werden Schritte des Redesigns beschrieben. Zunächst geht Nudelman auf das Umgestalten der o.b. Aspekte, insbesondere den ''Settings''-Knopf und die verstecktion Funktionen ein. In Abbildung~\ref{fig:design3} sind folgende Änderungen zu finden: \\
+\begin{itemize}
+\item Die Beschriftung des o.g. Knopfes wurde entfernt und durch ein Symbol erseltzt, um ikonische Sprache zu verwenden(\cite{AndroidDesignPatterns} Seite 7). Dies erleichtert die Lokalisation für andere Kulturen, weil nicht übersetzt werden muss. 
+\item Der ehemalige Inhalt der navigation bar wurde in die Action bar am oberen Bildschirmrand verschoben und ist so leichter zu finden(\cite{AndroidDesignPatterns}) Seite 7. Dies hilft insbesondere Menschen, welche Schwierigkeiten mit dem Durchsuchen des Bildschirmes nach Funktionen haben. Dabei kann es sich um Blindheit bzw. Sichteinschränkungen oder auch andere, vielleicht psychische Schäden oder Einschränkungen handeln, die ein einfaches Zurechtfinden erschweren.
+\end{itemize}
 
+\begin{figure}[h]
+ \centering
+ \includegraphics[height=0.40\textheight]{img/Design3.png}
+ \caption{Re-Design der GUI1}
+ \label{fig:design3}
+\end{figure}
 
-\subsection{Beispiele}
-\label{sub:examples}
+Wie Nudelman sagt, wurden aber wichtige Aspekte noch nicht beachtet, während der ersten Umgestaltung. Diese sind:
+\begin{itemize}
+\item Die Option ''Settings'' ist nicht hilfreich, steht aber durch die prominente Platzierung auf der GUI immernoch über den Funktionen, die im Dropdown menu zu finden wären. Ein Benutzer kommt vermutlich schnell zu dem Schluss, dass die versteckten Funktionen noch weniger hilfreich, als die prominent angeordneten sind und ruft sie daher garnicht erst auf.
+\item Die wichtigen Optionen werden nicht auf Anhieb gefunden und erfordern daher Suchkapazitäten, die durch den ersten genannten Punkt demotiviert werden(\cite{AndroidDesignPatterns} Seite 8) oder eventuell durch Benutzer mit mentalen oder physischen Herrausforderungen garnicht aufgebracht werden können.
+\end{itemize}
+\newline
 
-\subparagraph{Home Screen}
-\label{subp:home_screen}
+Diese Aspekte wurden in Abbildung~\ref{fig:design4} beachtet und durch erneute Umgestaltung verwirklicht. Wichtige Funktionen (''Find Dealers'' und ''My AutoTrader'') wurden in die Action bar aufgenommen und ''Settings'' wurde in das Dropdownmenu verschoben(Siehe Abbildung~\ref{fig:design4}).
 
-\subparagraph{Routenplaner}
-\label{subp:route_planner}
+\begin{figure}[h]
+ \centering
+ \includegraphics[height=0.40\textheight]{img/Design4.png}
+ \caption{Re-Design der GUI2}
+ \label{fig:design4}
+\end{figure}
 
-\subparagraph{Karten}
-\label{subp:maps}
+\subparagraph{Tabs}
+\label{sub:tabs}
 
-\subparagraph{Verkehr}
-\label{subp:traffic}
-
-\subparagraph{Icons}
-\label{subp:icons}
-
-\subparagraph{Interaktion}
-\label{subp:interaction2}
-
-\subsection{Resultate des Projektes} 
-\label{sub:results_of_the_project}
-
-\subparagraph{Lessons learned}
-\label{subp:lessons_learned}
-
-\subparagraph{Projekt Dokumentaion}
-\label{subp:documentation}
-
-\subparagraph{Vergleich mit anderes Systemen}
-\label{subp:comparison_to_other_systems}
+\begin{figure}[h]
+ \centering
+ \includegraphics[height=0.40\textheight]{img/tabs.png}
+ \caption{Re-Design der Tabs}
+ \label{fig:tabs}
+\end{figure}
