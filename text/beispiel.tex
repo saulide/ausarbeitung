@@ -34,7 +34,7 @@ Ein Logo wird nach Vorschrift von Apple Inc. immer viereckig, mit abgerundeten E
 \label{subp:vorher}
 Ersteinmal beschreibt der Autor Greg Nudelman das Aussehen der App bevor das Design angepasst wurde. Hierbei wird aufgezeigt, dass ein großer Knopf mit der Aufschrift ''Settings'' nichts an dem angestammten Platz in der oberen rechten Ecke des Bildschirmes zu suchen hat, da es sich dabei um eine der wichtiges Positionen auf der GUI handelt. Hinzukommt, dass der Knopf keine Einstellungen zeigt, wenn er ausgelöst wurde, sondern lediglich eine ''Anwalts''-Seite zeigt, auf der sich ''Privacy Policy'', ''Visitor Agreement'' und ein Knopf mit der Aufschrift ''Email-Feedback'' befinden(\cite{AndroidDesignPatterns} Seite 6).\\
 
-\begin{figure}[h]
+\begin{figure}[!h]
  \centering
  \includegraphics[height=0.40\textheight]{img/Design1.png}
  \caption{Design der GUI1}
@@ -43,7 +43,7 @@ Ersteinmal beschreibt der Autor Greg Nudelman das Aussehen der App bevor das Des
 
 Da der ''Settings''-Knopf so einen wichtigen Platz einnimmt, werden wichtigere Funktionen, wie ''Find cars'', ''Find dealer'' oder ''Scan \& Find'' in den Hintegrund gedrängt und sind in einer einem älteren Android nachempfundenen navigation bar menu versteckt. Beides wird in Abbildung~\ref{fig:design1} und Abbildung~\ref{fig:design2} durch eine rote Hand angezeigt.
 
-\begin{figure}[h]
+\begin{figure}[!h]
  \centering
  \includegraphics[height=0.40\textheight]{img/Design2.png}
  \caption{Design der GUI2}
@@ -58,7 +58,7 @@ Anschließend werden Schritte des Redesigns beschrieben. Zunächst geht Nudelman
 \item Der ehemalige Inhalt der navigation bar wurde in die Action bar am oberen Bildschirmrand verschoben und ist so leichter zu finden(\cite{AndroidDesignPatterns}) Seite 7. Dies hilft insbesondere Menschen, welche Schwierigkeiten mit dem Durchsuchen des Bildschirmes nach Funktionen haben. Dabei kann es sich um Blindheit bzw. Sichteinschränkungen oder auch andere, vielleicht psychische Schäden oder Einschränkungen handeln, die ein einfaches Zurechtfinden erschweren.
 \end{itemize}
 
-\begin{figure}[h]
+\begin{figure}[!h]
  \centering
  \includegraphics[height=0.40\textheight]{img/Design3.png}
  \caption{Re-Design der GUI1}
@@ -75,7 +75,7 @@ Diese Aspekte wurden in Abbildung~\ref{fig:design4} beachtet und durch erneute U
 
 Das sorgt nun für einfaches Auffinden der wichtigsten Optionen und gleichzeitig wird dafür gesorgt den versteckten Funktionen im Dropdown menu nicht die Wichtigkkeit zu nehmen. Somit ist gewährleistet, dass auch den untergeordneten Funktionen Aufmerksamkeit zukommt.\\
 
-\begin{figure}[h]
+\begin{figure}[!h]
  \centering
  \includegraphics[height=0.40\textheight]{img/Design4.png}
  \caption{Re-Design der GUI2}
@@ -89,7 +89,7 @@ Als nächstes werden die Tabs umgestaltet. Leider findet man eine kleine Unzulä
 
 Die kurz erwähnte Schwachstelle ist das eben schon genannte Anzeigen des aktiven Tabs durch einen Balken unter dem Text des aktiven Tabs. Hierdurch verringert sich der wahrnehmbare Bereich, was wiederrum zur Folge hat, dass Menschen mit geringerer Sehkraft ihn unter Umständen nicht wahrnehmen können. Dies kann zu Verwirrung führen.\\
 
-\begin{figure}[h]
+\begin{figure}[!h]
  \centering
  \includegraphics[height=0.08\textheight]{img/tabs.png}
  \caption{Re-Design der Tabs}
@@ -112,15 +112,12 @@ Dieses Einsparen visueller Hinweise hat zur Folge, dass der Informationsgehalt d
 \label{sub:search}
 Neben den genannten Änderungen wird in \cite{AndroidDesignPatterns} Seite 15 beschrieben, wie die Suchoption angepasst wurde. Aus einem links angeordneten Knopf für die Suche und einem kleinen rechts angeordneten Knopf zum Zurücksetzen der Suche(Siehe Abbildung~\ref{fig:search} oben) werden nach der Umgestaltung zwei unterschiedlich breite, aber gleich hohe Tippfelder, die die gesamte Bildschirmbreite ausfüllen(Siehe Abbildung~\ref{fig:search} unten).\\
 
-Hier gibt es einen deutlichen Vorteil durch das neue Design: Die Suche befindet sich nun auf der rechten Seite und da die meisten Menschen(ca. 90\%, siehe \cite{Handedness}) Rechtshänder sind, wird durch dieses Design auf einen größeren Teil der potentiellen Benutzer Rücksicht bezüglich des Komfort bei der Bedienung genommen. Dadurch, dass das Tippfeld für die Suche mehr als die Hälfte der Bildschirmbreite einnimmt, ist es für Linkshänder kein deutlicher Nachteil in der Bedienung.
-
-\begin{figure}[h]
+\begin{figure}[!h]
  \centering
  \includegraphics[height=0.08\textheight]{img/search.png}
  \caption{Re-Design der Suche}
  \label{fig:search}
 \end{figure}
 
-\subsection{Resumee}
-\label{sub:resumee}
-Obwohl der eigentliche Beweggrund des neuen Designs in dem Buch ''Android Design Patterns: Interactino Design Solutions for Developers'' eindeutig nicht ''Design for All'' im Auge hatte, sondern auf eine Anpassung an das Android look and feel abzielte, waren Analysen bezüglich ''Design for All'' möglich und durchaus interessant. Es gab Vor- und Nachteile aufzuzeigen, woraus ersichtlich wurde, dass es nicht immer nötig beziehungsweise sinnvoll ist, das Design einem bestimmten Dogma unterzuordnen. Darunter leiden unter Umständen die Benutzer. Eine Anzeige, die für manchen Benutzer nicht ersichtlich macht, was gerade aktiv ist, büßt Qualität ein(Siehe Absatz~\ref{sub:tabs}). Eine Anpassung an Links- und Rechtshänder ist jedoch sehr gut und löblich, was die Qualität steigert. Man sollte also bei einem Re-Design immer viele Aspekte betrachten, bevor man einfach irgendwie, wie es gerade schön scheint oder diktiert wird umgestaltet.
+Hier gibt es einen deutlichen Vorteil durch das neue Design: Die Suche befindet sich nun auf der rechten Seite und da die meisten Menschen(ca. 90\%, siehe \cite{Handedness}) Rechtshänder sind, wird durch dieses Design auf einen größeren Teil der potentiellen Benutzer Rücksicht bezüglich des Komfort bei der Bedienung genommen. Dadurch, dass das Tippfeld für die Suche mehr als die Hälfte der Bildschirmbreite einnimmt, ist es für Linkshänder kein deutlicher Nachteil in der Bedienung.
+
